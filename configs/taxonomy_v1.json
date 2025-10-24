@@ -1,0 +1,12 @@
+[
+  {"canonical_label": "sneakers", "type": "clothing", "aliases": ["kicks", "js", "jordans", "dunks", "forces", "air force 1", "ones", "95s"]},
+  {"canonical_label": "jeans", "type": "clothing", "aliases": ["denims"]},
+  {"canonical_label": "hoodie", "type": "clothing", "aliases": ["hoodie", "hooded sweatshirt", "hooded sweater"]},
+  {"canonical_label": "leather jacket", "type": "clothing", "aliases": ["leather coat"]},
+  {"canonical_label": "silk", "type": "material", "aliases": ["silky"]},
+  {"canonical_label": "denim", "type": "material", "aliases": []},
+  {"canonical_label": "leather", "type": "material", "aliases": []},
+  {"canonical_label": "chain", "type": "accessory", "aliases": ["gold chain", "silver chain"]},
+  {"canonical_label": "watch", "type": "accessory", "aliases": ["rollie", "rolex", "patek", "ap"]},
+  {"canonical_label": "shades", "type": "accessory", "aliases": ["sunglasses"]}
+]
