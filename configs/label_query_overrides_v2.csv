@@ -1,0 +1,33 @@
+label,query
+sneakers,"sneakers OR kicks OR trainers OR jordans OR dunks OR ""air force 1"" OR af1"
+jeans,"jeans OR ""denim jeans"" OR ""denim pants"""
+hoodie,"hoodie OR ""hooded sweatshirt"" OR pullover"
+watch,"watch OR wristwatch OR timepiece OR rolex OR patek OR ""audemars piguet"" OR AP"
+bag,bag OR purse OR handbag OR tote
+cap,"""baseball cap"" OR ""fitted cap"" OR ""fitted hat"""
+boots,boots OR timberlands OR timbs
+shades,sunglasses OR shades
+dress,dress OR gown
+coat,"coat OR ""trench coat"" OR parka"
+jacket,"jacket OR ""bomber jacket"""
+heels,heels OR stilettos
+chain,"""gold chain"" OR ""silver chain"" OR ""cuban link"""
+beanie,"beanie OR ""knit cap"""
+slides,slides OR sliders
+sandals,sandals
+sweater,sweater OR jumper OR cardigan
+sweatshirt,sweatshirt OR crewneck
+pants,pants OR trousers
+cargo pants,"""cargo pants"" OR cargos"
+ring,"ring OR ""pinkie ring"""
+earrings,earrings OR studs OR hoops
+loafers,loafers
+bucket hat,"""bucket hat"""
+durag,"durag OR ""du-rag"" OR ""do-rag"""
+leather jacket,"""leather jacket"" OR ""leather coat"""
+denim,denim
+leather,leather OR suede
+silk,silk
+cotton,cotton
+wool,wool OR cashmere OR merino
+velvet,velvet
