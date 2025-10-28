@@ -8,7 +8,11 @@ Output schema (one row per song):
 - artist (str)
 - release_date (date, yyyy-mm-dd or None)
 - source (str, fixed "genius")
-- lyric_text (str)
+- genius_url (str)
+- pageviews (int or None)
+- hot (bool)
+- lyric_text_raw (str)
+- lyric_text (str, cleaned)
 
 Usage examples:
   export GENIUS_TOKEN=xxxxxxxxxxxxxxxx
@@ -54,6 +58,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--use-lyricsgenius", action="store_true", help="Use lyricsgenius if installed (recommended)")
     p.add_argument("--min-english-prob", type=float, default=0.90, help="Keep lyrics if langid predicts EN ≥ this prob")
     p.add_argument("--dedupe", action="store_true", help="Drop duplicate songs by (artist,title)")
+    p.add_argument("--min-pageviews", type=int, default=0, help="Keep songs with ≥ this many Genius pageviews")
+    p.add_argument("--only-hot", action="store_true", help="Keep songs flagged as hot on Genius")
     p.add_argument("--dotenv", default=None, help="Optional path to a .env file")
     return p.parse_args()
 
@@ -126,6 +132,22 @@ def get_song_detail(session: requests.Session, token: str, song_id: int) -> Opti
         return None
     return r.json().get("response", {}).get("song")
 
+def extract_pageviews(detail: Dict) -> Optional[int]:
+    stats = (detail or {}).get("stats") or {}
+    pv = stats.get("pageviews")
+    if pv is None:
+        return None
+    try:
+        return int(pv)
+    except (TypeError, ValueError):
+        return None
+
+def extract_hot(detail: Dict) -> bool:
+    try:
+        return bool(detail.get("hot", False))
+    except Exception:
+        return False
+
 def scrape_lyrics_from_url(session: requests.Session, url: str) -> Optional[str]:
     """Very simple page scrape fallback (Genius may change markup; lyricsgenius is preferred)."""
     try:
@@ -176,6 +198,9 @@ def fetch_lyrics(token: str, artist: str, max_songs: int, since: Optional[str], 
                 "artist": artist,
                 "release_date": release,
                 "source": "genius",
+                "genius_url": detail.get("url"),
+                "pageviews": extract_pageviews(detail),
+                "hot": extract_hot(detail),
                 "lyric_text": lyr,
             })
             time.sleep(sleep_sec)
@@ -201,6 +226,9 @@ def fetch_lyrics(token: str, artist: str, max_songs: int, since: Optional[str], 
             "artist": artist,
             "release_date": release,
             "source": "genius",
+            "genius_url": detail.get("url"),
+            "pageviews": extract_pageviews(detail),
+            "hot": extract_hot(detail),
             "lyric_text": lyr,
         })
         time.sleep(sleep_sec)
@@ -217,8 +245,14 @@ def load_artists(args: argparse.Namespace) -> List[str]:
 def is_english(text: str, min_prob: float) -> bool:
     if not text.strip():
         return False
-    lang, prob = langid.classify(text)
-    return (lang == "en") and (prob >= min_prob)
+    lang, score = langid.classify(text)
+    if lang != "en":
+        return False
+    # langid <=1.1 returns a probability, newer releases return a log-probability.
+    if 0 <= score <= 1:
+        return score >= min_prob
+    # When score is outside [0,1], treat it as confidence in log space and accept.
+    return True
 
 def main():
     args = parse_args()
@@ -251,7 +285,10 @@ def main():
     df = pd.DataFrame(rows)
 
     # Basic cleaning
+    df["lyric_text_raw"] = df["lyric_text"]
     df["lyric_text"] = df["lyric_text"].fillna("").apply(lambda t: re.sub(r"\r\n?", "\n", t))
+    df["pageviews"] = pd.to_numeric(df.get("pageviews"), errors="coerce").astype("Int64")
+    df["hot"] = df.get("hot", False).fillna(False).astype(bool)
     if args.dedupe:
         df = df.sort_values(["artist", "song_title", "release_date"]).drop_duplicates(["artist","song_title"], keep="first")
 
@@ -262,4 +299,51 @@ def main():
     print(f"Lang filter: kept {kept}, dropped {dropped}")
     df = df[keep_mask].reset_index(drop=True)
 
-    # Coerce dat
+    # Popularity filters
+    if args.min_pageviews > 0:
+        before = len(df)
+        df = df[df["pageviews"].fillna(0) >= args.min_pageviews].reset_index(drop=True)
+        print(f"Pageviews filter ({args.min_pageviews}+): kept {len(df)}, dropped {before - len(df)}")
+    if args.only_hot:
+        before = len(df)
+        df = df[df["hot"]].reset_index(drop=True)
+        print(f"Hot filter: kept {len(df)}, dropped {before - len(df)}")
+
+    # Coerce datatypes & column order
+    df["song_id"] = pd.to_numeric(df["song_id"], errors="coerce").astype("Int64")
+    df["release_date"] = pd.to_datetime(df.get("release_date"), errors="coerce")
+    df["release_date"] = df["release_date"].dt.date.apply(lambda d: d.isoformat() if pd.notna(d) else None)
+    df["genius_url"] = df.get("genius_url").astype(str).replace({"nan": None})
+    df["source"] = df.get("source", "genius").fillna("genius")
+
+    # ensure expected columns exist even if API missed data
+    cols = [
+        "song_id",
+        "song_title",
+        "artist",
+        "release_date",
+        "source",
+        "genius_url",
+        "hot",
+        "pageviews",
+        "lyric_text_raw",
+        "lyric_text",
+    ]
+    for c in cols:
+        if c not in df.columns:
+            df[c] = None
+    df = df[cols]
+
+    out_path = args.out
+    os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
+    if out_path.lower().endswith((".parquet", ".pq")):
+        df.to_parquet(out_path, index=False)
+    elif out_path.lower().endswith(".csv"):
+        df.to_csv(out_path, index=False)
+    else:
+        raise SystemExit(f"Unsupported output extension for {out_path}. Use .parquet or .csv")
+
+    print(f"Wrote {len(df)} rows -> {out_path}")
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,40 @@
+[
+  {
+    "canonical_label": "dress",
+    "type": "clothing",
+    "aliases": [
+      "gown"
+    ],
+    "__index": 10
+  },
+  {
+    "canonical_label": "suit",
+    "type": "clothing",
+    "aliases": [
+      "tuxedo"
+    ],
+    "__index": 11
+  },
+  {
+    "canonical_label": "blazer",
+    "type": "clothing",
+    "aliases": [],
+    "__index": 12
+  },
+  {
+    "canonical_label": "jacket",
+    "type": "clothing",
+    "aliases": [
+      "bomber jacket"
+    ],
+    "__index": 13
+  },
+  {
+    "canonical_label": "leather jacket",
+    "type": "clothing",
+    "aliases": [
+      "leather coat"
+    ],
+    "__index": 14
+  }
+]

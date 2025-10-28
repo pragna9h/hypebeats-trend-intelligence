@@ -1,0 +1,149 @@
+[
+  {
+    "canonical_label": "t-shirt",
+    "type": "clothing",
+    "aliases": [
+      "tee",
+      "tshirt",
+      "graphic tee"
+    ]
+  },
+  {
+    "canonical_label": "shirt",
+    "type": "clothing",
+    "aliases": [
+      "button-down",
+      "blouse"
+    ]
+  },
+  {
+    "canonical_label": "hoodie",
+    "type": "clothing",
+    "aliases": [
+      "hooded sweatshirt",
+      "pullover hoodie"
+    ]
+  },
+  {
+    "canonical_label": "sweatshirt",
+    "type": "clothing",
+    "aliases": [
+      "crewneck"
+    ]
+  },
+  {
+    "canonical_label": "sweater",
+    "type": "clothing",
+    "aliases": [
+      "jumper",
+      "cardigan"
+    ]
+  },
+  {
+    "canonical_label": "jeans",
+    "type": "clothing",
+    "aliases": [
+      "denim jeans",
+      "denims"
+    ]
+  },
+  {
+    "canonical_label": "cargo pants",
+    "type": "clothing",
+    "aliases": [
+      "cargos"
+    ]
+  },
+  {
+    "canonical_label": "pants",
+    "type": "clothing",
+    "aliases": [
+      "trousers"
+    ]
+  },
+  {
+    "canonical_label": "shorts",
+    "type": "clothing",
+    "aliases": []
+  },
+  {
+    "canonical_label": "skirt",
+    "type": "clothing",
+    "aliases": []
+  },
+  {
+    "canonical_label": "dress",
+    "type": "clothing",
+    "aliases": [
+      "gown"
+    ]
+  },
+  {
+    "canonical_label": "suit",
+    "type": "clothing",
+    "aliases": [
+      "tuxedo"
+    ]
+  },
+  {
+    "canonical_label": "blazer",
+    "type": "clothing",
+    "aliases": []
+  },
+  {
+    "canonical_label": "jacket",
+    "type": "clothing",
+    "aliases": [
+      "bomber jacket"
+    ]
+  },
+  {
+    "canonical_label": "leather jacket",
+    "type": "clothing",
+    "aliases": [
+      "leather coat"
+    ]
+  },
+  {
+    "canonical_label": "coat",
+    "type": "clothing",
+    "aliases": [
+      "trench coat",
+      "parka"
+    ]
+  },
+  {
+    "canonical_label": "boots",
+    "type": "clothing",
+    "aliases": [
+      "timbs",
+      "timberlands"
+    ]
+  },
+  {
+    "canonical_label": "sneakers",
+    "type": "clothing",
+    "aliases": [
+      "kicks",
+      "trainers",
+      "jordans",
+      "dunks",
+      "air force 1",
+      "af1",
+      "ones"
+    ]
+  },
+  {
+    "canonical_label": "heels",
+    "type": "clothing",
+    "aliases": [
+      "high heels",
+      "stilettos"
+    ]
+  },
+  {
+    "canonical_label": "loafers",
+    "type": "clothing",
+    "aliases": []
+  }
+]

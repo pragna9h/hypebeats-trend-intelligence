@@ -26,7 +26,8 @@ import pandas as pd
 
 def parse_args():
     p = argparse.ArgumentParser()
-    p.add_argument("--in", dest="inp", required=True)
+    p.add_argument("--in", "--lyrics", dest="inp", required=True,
+                   help="Input parquet with lyrics (alias: --lyrics)")
     p.add_argument("--out", dest="outp", required=True)
     p.add_argument("--taxonomy", required=True)
     p.add_argument("--aliases", required=True)
@@ -118,6 +119,9 @@ def main():
     if "song_id" not in df.columns: df["song_id"] = None
     if "release_date" not in df.columns: df["release_date"] = None
     if "source" not in df.columns: df["source"] = "genius"
+    if "genius_url" not in df.columns: df["genius_url"] = None
+    if "pageviews" not in df.columns: df["pageviews"] = None
+    if "hot" not in df.columns: df["hot"] = False
 
     out_rows = []
     mention_counter = 0
@@ -128,6 +132,9 @@ def main():
         artist = row["artist"]
         release_date = row.get("release_date")
         source = row.get("source", "genius")
+        genius_url = row.get("genius_url")
+        pageviews = row.get("pageviews")
+        hot = bool(row.get("hot", False))
         text = (row["lyric_text"] or "").replace("\r", "")
 
         if not text.strip():
@@ -176,6 +183,9 @@ def main():
                     "artist": artist,
                     "release_date": release_date,
                     "source": source,
+                    "genius_url": genius_url,
+                    "pageviews": pageviews,
+                    "hot": hot,
                 })
 
     if not out_rows:
@@ -183,11 +193,16 @@ def main():
         pd.DataFrame([], columns=[
             "mention_id","song_id","line_id","mention_type","surface_form","canonical_label",
             "detector","confidence","start_char","end_char","context_window","sentiment_label",
-            "sentiment_score","title","artist","release_date","source"
+            "sentiment_score","title","artist","release_date","source","genius_url","pageviews","hot"
         ]).to_parquet(args.outp, index=False)
         return
 
     mdf = pd.DataFrame(out_rows)
+    for col in ["pageviews"]:
+        if col in mdf.columns:
+            mdf[col] = pd.to_numeric(mdf[col], errors="coerce")
+    if "hot" in mdf.columns:
+        mdf["hot"] = mdf["hot"].fillna(False).astype(bool)
     mdf.to_parquet(args.outp, index=False)
     print(f"Saved {len(mdf)} mentions -> {args.outp}")
 

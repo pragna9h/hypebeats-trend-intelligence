@@ -1,0 +1,49 @@
+[
+  {
+    "canonical_label": "coat",
+    "type": "clothing",
+    "aliases": [
+      "trench coat",
+      "parka"
+    ],
+    "__index": 15
+  },
+  {
+    "canonical_label": "boots",
+    "type": "clothing",
+    "aliases": [
+      "timbs",
+      "timberlands"
+    ],
+    "__index": 16
+  },
+  {
+    "canonical_label": "sneakers",
+    "type": "clothing",
+    "aliases": [
+      "kicks",
+      "trainers",
+      "jordans",
+      "dunks",
+      "air force 1",
+      "af1",
+      "ones"
+    ],
+    "__index": 17
+  },
+  {
+    "canonical_label": "heels",
+    "type": "clothing",
+    "aliases": [
+      "high heels",
+      "stilettos"
+    ],
+    "__index": 18
+  },
+  {
+    "canonical_label": "loafers",
+    "type": "clothing",
+    "aliases": [],
+    "__index": 19
+  }
+]

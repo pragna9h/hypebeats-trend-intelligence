@@ -172,33 +172,42 @@ def fetch_with_retry(py, keywords: list[str], cfg, combine: str, max_tries: int 
     return comp
 
 
-def yearly_aggregate(series: pd.DataFrame, label: str) -> pd.DataFrame:
-    """Aggregate a single-keyword history to yearly metrics at Year Start (YS).
-    Returns a frame with columns: label, year, yearly_mean, yearly_max, yearly_min, yearly_sum, n_points
-    """
+def aggregate_period(series: pd.DataFrame, label: str, freq: str) -> pd.DataFrame:
+    """Aggregate a single keyword history into yearly or quarterly metrics."""
     if series is None or series.empty:
-        return pd.DataFrame(columns=[
-            "label", "year", "yearly_mean", "yearly_max", "yearly_min", "yearly_sum", "n_points"
-        ])
-    # Ensure datetime index
+        return pd.DataFrame()
+
     if not isinstance(series.index, pd.DatetimeIndex):
         series = series.copy()
         series.index = pd.to_datetime(series.index)
 
-    # The single column name is the query; values are 0..100
     col = series.columns[0]
-    grp = series[col].resample("YS")
+    rule = "YS" if freq == "year" else "QS"
+    grp = series[col].resample(rule)
     out = pd.DataFrame({
-        "yearly_mean": grp.mean(),
-        "yearly_max": grp.max(),
-        "yearly_min": grp.min(),
-        "yearly_sum": grp.sum(),
+        "trend_mean": grp.mean(),
+        "trend_max": grp.max(),
+        "trend_min": grp.min(),
+        "trend_sum": grp.sum(),
         "n_points": grp.size(),
     })
-    out = ensure_year_column(out)
+    if out.empty:
+        return pd.DataFrame()
+
+    out["period_start"] = out.index.date
+    out["year"] = out.index.year.astype(int)
+    if freq == "quarter":
+        out["quarter"] = out.index.quarter.astype(int)
+        out["period_label"] = out["year"].astype(str) + "Q" + out["quarter"].astype(str)
+    else:
+        out["period_label"] = out["year"].astype(str)
     out.insert(0, "label", label)
-    # Keep only required columns, in exact order
-    out = out[["label", "year", "yearly_mean", "yearly_max", "yearly_min", "yearly_sum", "n_points"]]
+
+    cols = ["label", "period_start", "period_label", "year"]
+    if freq == "quarter":
+        cols.append("quarter")
+    cols += ["trend_mean", "trend_max", "trend_min", "trend_sum", "n_points"]
+    out = out[cols]
     return out
 
 
@@ -284,6 +293,10 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     p.add_argument("--tz-minutes", type=int, default=0, help="Timezone offset minutes for pytrends tz (default: 0)")
     p.add_argument("--sleep-sec", type=float, default=1.0, help="Sleep seconds between queries (default: 1.0)")
     p.add_argument("--combine", choices=["median", "mean", "max"], default="median", help="How to combine synonym series within a label (default: median).")
+    p.add_argument("--freq", choices=["year", "quarter"], default="year",
+                   help="Aggregation frequency for the output periods (default: year).")
+    p.add_argument("--start-date", default=None,
+                   help="Optional ISO date (YYYY-MM-DD); drop trend data before this date.")
 
     p.add_argument("--checkpoint", action="store_true",
                    help="If set, append/write partial results every ~5 labels to --out")
@@ -336,8 +349,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         combined = pd.concat(all_chunks, ignore_index=True) if all_chunks else pd.DataFrame()
         if combined.empty:
             return
-        # Ensure column order
-        combined = combined[["label", "year", "yearly_mean", "yearly_max", "yearly_min", "yearly_sum", "n_points"]]
+        # Preserve column order as aggregated
+        combined = combined.loc[:, combined.columns]
         # Write (overwrite). If you prefer append, de-dup first.
         os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
         combined.to_csv(args.out, index=False)
@@ -353,9 +366,15 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         if df is None or df.empty:
             LOGGER.warning("Skipping label='%s' due to empty series", label)
         else:
-            ya = yearly_aggregate(df, label)
+            if args.start_date:
+                try:
+                    start_dt = pd.to_datetime(args.start_date)
+                    df = df[df.index >= start_dt]
+                except Exception:
+                    LOGGER.warning("Invalid --start-date '%s'; ignoring.", args.start_date)
+            ya = aggregate_period(df, label, args.freq)
             if ya.empty:
-                LOGGER.warning("No yearly rows after resample for label='%s' (skipping)", label)
+                LOGGER.warning("No %s rows after resample for label='%s' (skipping)", args.freq, label)
             else:
                 all_chunks.append(ya)
                 batch += 1
@@ -368,7 +387,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if all_chunks:
         # Combine and write final to ensure completeness
         final_df = pd.concat(all_chunks, ignore_index=True)
-        final_df = final_df[["label", "year", "yearly_mean", "yearly_max", "yearly_min", "yearly_sum", "n_points"]]
+        final_df = final_df.loc[:, final_df.columns]
         os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
         final_df.to_csv(args.out, index=False)
         LOGGER.info("Wrote final %d rows to %s", len(final_df), args.out)

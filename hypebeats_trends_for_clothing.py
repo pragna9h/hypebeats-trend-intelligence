@@ -18,6 +18,7 @@ from typing import Dict, Optional, Set
 import pandas as pd
 from dateutil import parser as dateparser
 from pytrends.request import TrendReq
+import random
 
 
 # ----------------------------
@@ -31,6 +32,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--out", required=True, help="Output CSV path for window stats.")
     p.add_argument("--window-days", type=int, default=14, help="Half-window in days before/after release date.")
     p.add_argument("--sleep-sec", type=float, default=1.0, help="Seconds to sleep between pytrends calls.")
+    p.add_argument("--max-tries", type=int, default=5, help="Maximum attempts per query window before giving up.")
     p.add_argument("--label-alias-csv", default=None, help="Optional CSV with columns [label,query].")
     p.add_argument("--timezone-minutes", type=int, default=0, help="Timezone offset minutes for pytrends (e.g., 420).")
     p.add_argument("--language", default="en-US", help="Locale for pytrends.")
@@ -162,48 +164,68 @@ def main():
         start = (release_date - half).strftime("%Y-%m-%d")
         end = (release_date + half).strftime("%Y-%m-%d")
 
-        try:
-            pytrends.build_payload([term], timeframe=f"{start} {end}")
-            trend_df = pytrends.interest_over_time()
+        success = False
+        backoff = max(args.sleep_sec, 1.0)
 
-            if trend_df.empty or term not in trend_df.columns:
-                print(f"[WARN] No trend data for '{term}' around {release_date.date()}")
-                continue
+        for attempt in range(1, args.max_tries + 1):
+            try:
+                pytrends.build_payload([term], timeframe=f"{start} {end}")
+                trend_df = pytrends.interest_over_time()
 
-            series = trend_df[term]
-            series.index = pd.to_datetime(series.index.date)
+                if trend_df.empty or term not in trend_df.columns:
+                    print(f"[WARN] No trend data for '{term}' around {release_date.date()}")
+                    success = True  # nothing to do but don't retry
+                    break
 
-            # optionally dump the raw daily series
-            if args.emit_series_dir:
-                key = f"{label}|{label_type}|{int(song_id) if pd.notna(song_id) else -1}|{release_date.date().isoformat()}"
-                fn = f"{_safe_name(key)}.csv"
-                series.to_frame("value").to_csv(os.path.join(args.emit_series_dir, fn), index_label="date")
+                series = trend_df[term]
+                series.index = pd.to_datetime(series.index.date)
 
-            stats = compute_window_stats(series, release_date)
-            if stats["n_before_points"] < args.min_samples or stats["n_after_points"] < args.min_samples:
-                print(
-                    f"[SKIP] Not enough data for '{term}' around {release_date.date()} "
-                    f"(before={stats['n_before_points']}, after={stats['n_after_points']})"
+                # optionally dump the raw daily series
+                if args.emit_series_dir:
+                    key = f"{label}|{label_type}|{int(song_id) if pd.notna(song_id) else -1}|{release_date.date().isoformat()}"
+                    fn = f"{_safe_name(key)}.csv"
+                    series.to_frame("value").to_csv(os.path.join(args.emit_series_dir, fn), index_label="date")
+
+                stats = compute_window_stats(series, release_date)
+                if stats["n_before_points"] < args.min_samples or stats["n_after_points"] < args.min_samples:
+                    print(
+                        f"[SKIP] Not enough data for '{term}' around {release_date.date()} "
+                        f"(before={stats['n_before_points']}, after={stats['n_after_points']})"
+                    )
+                    success = True
+                    break
+
+                out_rows.append(
+                    {
+                        "label": label,
+                        "label_type": label_type,
+                        "query_used": term,
+                        "song_id": song_id,
+                        "title": title,
+                        "artist": artist,
+                        "release_date": release_date.date().isoformat(),
+                        **stats,
+                    }
                 )
-                continue
+                success = True
+                break
 
-            out_rows.append(
-                {
-                    "label": label,
-                    "label_type": label_type,
-                    "query_used": term,
-                    "song_id": song_id,
-                    "title": title,
-                    "artist": artist,
-                    "release_date": release_date.date().isoformat(),
-                    **stats,
-                }
-            )
+            except Exception as e:
+                msg = str(e)
+                if attempt >= args.max_tries:
+                    print(f"[ERROR] {label} @ {release_date.date()}: {msg}")
+                    break
+                if "429" in msg:
+                    backoff = max(backoff * 2, args.sleep_sec * 2)
+                else:
+                    backoff = backoff + 0.5
+                wait = backoff + random.uniform(0.5, 1.5)
+                print(f"[RETRY] Attempt {attempt}/{args.max_tries} for '{term}' hit error: {msg}. Sleeping {wait:.1f}s")
+                time.sleep(wait)
 
-        except Exception as e:
-            print(f"[ERROR] {label} @ {release_date.date()}: {e}")
-        finally:
-            time.sleep(args.sleep_sec)
+        # gentle pause between labels even when successful
+        if success:
+            time.sleep(args.sleep_sec + random.uniform(0.0, 0.5))
 
     if not out_rows:
         print("No trend rows produced. Check your labels/queries and dates.")
