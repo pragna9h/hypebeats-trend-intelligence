@@ -126,10 +126,16 @@
     "aliases": ["collared shirt", "tennis shirt", "golf shirt"]
   },
   {
-    "canonical_label": "rugby shirt",
+    "canonical_label": "skinny jeans",
     "type": "clothing",
-    "category": "tops",
-    "aliases": ["striped polo", "rugby jersey", "long sleeve polo"]
+    "category": "bottoms",
+    "aliases": ["skinny fit jeans", "slim fit jeans", "pencil jeans"]
+  },
+  {
+    "canonical_label": "fur coat",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["faux fur coat", "shearling jacket", "teddy coat"]
   },
   {
     "canonical_label": "cardigan",
