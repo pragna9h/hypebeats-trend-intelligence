@@ -63,3 +63,8 @@ logs/
 # Local development
 local_settings.py
 *.local
+
+rag-system/data/*.csv
+!rag-system/data/artists.csv
+!rag-system/data/brands.csv
+!rag-system/data/songs_final.csv

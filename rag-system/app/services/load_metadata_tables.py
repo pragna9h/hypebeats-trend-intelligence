@@ -16,11 +16,9 @@ def main():
     settings = get_settings()
     engine = create_engine(settings.database.service_url)
     
-    # Go up three levels from current file to reach the project root
-    base_path = os.path.abspath(os.path.join(
-        os.path.dirname(__file__), '..', '..', '..', 'data', 'brand_data'
-    ))
-    logger.info(f"Loading data from: {base_path}")
+    # Path is now relative to the project root (rag-system/)
+    data_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
+    logger.info(f"Loading data from: {data_dir}")
     
     # Load in order (FK constraints)
     for file, table in [
@@ -28,7 +26,9 @@ def main():
         ('brands.csv', 'brands'),
         ('songs_final.csv', 'songs')
     ]:
-        df = pd.read_csv(os.path.join(base_path, file), encoding='utf-8-sig')
+        file_path = os.path.join(data_dir, file)
+        logger.info(f"Loading {file} from {file_path}")
+        df = pd.read_csv(file_path, encoding='utf-8-sig')
         df.to_sql(table, engine, if_exists='replace', index=False)
         logger.info(f"✓ Loaded {len(df)} rows into {table}")
     
