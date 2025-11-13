@@ -1,0 +1,84 @@
+[
+  {
+    "canonical_label": "t-shirt",
+    "type": "clothing",
+    "aliases": [
+      "tee",
+      "tshirt",
+      "graphic tee"
+    ],
+    "__index": 0
+  },
+  {
+    "canonical_label": "shirt",
+    "type": "clothing",
+    "aliases": [
+      "button-down",
+      "blouse"
+    ],
+    "__index": 1
+  },
+  {
+    "canonical_label": "hoodie",
+    "type": "clothing",
+    "aliases": [
+      "hooded sweatshirt",
+      "pullover hoodie"
+    ],
+    "__index": 2
+  },
+  {
+    "canonical_label": "sweatshirt",
+    "type": "clothing",
+    "aliases": [
+      "crewneck"
+    ],
+    "__index": 3
+  },
+  {
+    "canonical_label": "sweater",
+    "type": "clothing",
+    "aliases": [
+      "jumper",
+      "cardigan"
+    ],
+    "__index": 4
+  },
+  {
+    "canonical_label": "jeans",
+    "type": "clothing",
+    "aliases": [
+      "denim jeans",
+      "denims"
+    ],
+    "__index": 5
+  },
+  {
+    "canonical_label": "cargo pants",
+    "type": "clothing",
+    "aliases": [
+      "cargos"
+    ],
+    "__index": 6
+  },
+  {
+    "canonical_label": "pants",
+    "type": "clothing",
+    "aliases": [
+      "trousers"
+    ],
+    "__index": 7
+  },
+  {
+    "canonical_label": "shorts",
+    "type": "clothing",
+    "aliases": [],
+    "__index": 8
+  },
+  {
+    "canonical_label": "skirt",
+    "type": "clothing",
+    "aliases": [],
+    "__index": 9
+  }
+]

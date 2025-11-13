@@ -1,0 +1,362 @@
+[
+  {
+    "canonical_label": "puffer jacket",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["down jacket", "bubble jacket", "puffer coat", "quilted jacket"]
+  },
+  {
+    "canonical_label": "fleece jacket",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["sherpa jacket", "fleece pullover", "patagonia fleece", "teddy jacket"]
+  },
+  {
+    "canonical_label": "windbreaker",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["nylon jacket", "shell jacket", "track jacket", "anorak"]
+  },
+  {
+    "canonical_label": "technical vest",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["utility vest", "tactical vest", "fishing vest", "puffer vest"]
+  },
+  {
+    "canonical_label": "bomber jacket",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["ma-1", "flight jacket", "varsity bomber"]
+  },
+  {
+    "canonical_label": "denim jacket",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["jean jacket", "trucker jacket", "sherpa denim jacket"]
+  },
+  {
+    "canonical_label": "trench coat",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["long coat", "belted coat", "mac coat"]
+  },
+  {
+    "canonical_label": "leather jacket",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["moto jacket", "biker jacket", "leather bomber"]
+  },
+  {
+    "canonical_label": "varsity jacket",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["letterman jacket", "baseball jacket", "college jacket"]
+  },
+  {
+    "canonical_label": "parka",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["winter coat", "hooded parka", "fur trim parka"]
+  },
+  {
+    "canonical_label": "cropped jacket",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["short jacket", "cropped blazer", "shrug jacket"]
+  },
+  {
+    "canonical_label": "oversized blazer",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["boyfriend blazer", "relaxed blazer", "slouchy blazer"]
+  },
+  {
+    "canonical_label": "oversized hoodie",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["baggy hoodie", "boyfriend hoodie", "oversized sweatshirt"]
+  },
+  {
+    "canonical_label": "cropped hoodie",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["crop hoodie", "short hoodie", "cropped sweatshirt"]
+  },
+  {
+    "canonical_label": "zip-up hoodie",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["full zip hoodie", "zipper hoodie", "track hoodie"]
+  },
+  {
+    "canonical_label": "graphic tee",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["band tee", "vintage tee", "printed t-shirt"]
+  },
+  {
+    "canonical_label": "baby tee",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["fitted tee", "crop tee", "tight t-shirt"]
+  },
+  {
+    "canonical_label": "oversized t-shirt",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["baggy tee", "boyfriend tee", "oversized tee"]
+  },
+  {
+    "canonical_label": "tank top",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["muscle tank", "sleeveless shirt", "vest top"]
+  },
+  {
+    "canonical_label": "halter top",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["halter neck", "tie neck top", "backless top"]
+  },
+  {
+    "canonical_label": "polo shirt",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["collared shirt", "tennis shirt", "golf shirt"]
+  },
+  {
+    "canonical_label": "skinny jeans",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["skinny fit jeans", "slim fit jeans", "pencil jeans"]
+  },
+  {
+    "canonical_label": "fur coat",
+    "type": "clothing",
+    "category": "outerwear",
+    "aliases": ["faux fur coat", "shearling jacket", "teddy coat"]
+  },
+  {
+    "canonical_label": "cardigan",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["button cardigan", "sweater cardigan", "knit cardigan"]
+  },
+  {
+    "canonical_label": "knit sweater",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["cable knit", "chunky knit", "pullover sweater"]
+  },
+  {
+    "canonical_label": "turtleneck",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["mock neck", "roll neck", "high neck sweater"]
+  },
+  {
+    "canonical_label": "flannel shirt",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["plaid shirt", "flannel button-up", "lumberjack shirt"]
+  },
+  {
+    "canonical_label": "mesh top",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["see-through top", "fishnet top", "sheer top"]
+  },
+  {
+    "canonical_label": "corset top",
+    "type": "clothing",
+    "category": "tops",
+    "aliases": ["bustier", "corset shirt", "boned top"]
+  },
+  {
+    "canonical_label": "cargo pants",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["cargos", "utility pants", "combat pants", "pocket pants"]
+  },
+  {
+    "canonical_label": "baggy jeans",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["wide leg jeans", "relaxed jeans", "loose fit jeans"]
+  },
+  {
+    "canonical_label": "straight leg jeans",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["straight jeans", "regular fit jeans", "classic jeans"]
+  },
+  {
+    "canonical_label": "mom jeans",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["high waisted jeans", "vintage jeans", "90s jeans"]
+  },
+  {
+    "canonical_label": "low rise jeans",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["low waist jeans", "y2k jeans", "hip huggers"]
+  },
+  {
+    "canonical_label": "flare pants",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["flared jeans", "bootcut jeans", "bell bottoms"]
+  },
+  {
+    "canonical_label": "leather pants",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["faux leather pants", "leather trousers", "pleather pants"]
+  },
+  {
+    "canonical_label": "track pants",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["athletic pants", "warm up pants", "tearaway pants"]
+  },
+  {
+    "canonical_label": "joggers",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["sweatpants", "jogger pants", "cuffed sweatpants"]
+  },
+  {
+    "canonical_label": "wide leg pants",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["palazzo pants", "flowy pants", "wide trousers"]
+  },
+  {
+    "canonical_label": "biker shorts",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["cycling shorts", "bike shorts", "spandex shorts"]
+  },
+  {
+    "canonical_label": "mini skirt",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["short skirt", "micro skirt", "tennis skirt"]
+  },
+  {
+    "canonical_label": "pleated skirt",
+    "type": "clothing",
+    "category": "bottoms",
+    "aliases": ["plaid skirt", "school skirt", "tennis pleated skirt"]
+  },
+  {
+    "canonical_label": "slip dress",
+    "type": "clothing",
+    "category": "dresses",
+    "aliases": ["satin dress", "silk dress", "cami dress"]
+  },
+  {
+    "canonical_label": "maxi dress",
+    "type": "clothing",
+    "category": "dresses",
+    "aliases": ["long dress", "floor length dress", "flowing dress"]
+  },
+  {
+    "canonical_label": "midi dress",
+    "type": "clothing",
+    "category": "dresses",
+    "aliases": ["tea length dress", "mid length dress", "below knee dress"]
+  },
+  {
+    "canonical_label": "mini dress",
+    "type": "clothing",
+    "category": "dresses",
+    "aliases": ["short dress", "bodycon dress", "tight dress"]
+  },
+  {
+    "canonical_label": "sneakers",
+    "type": "clothing",
+    "category": "footwear",
+    "aliases": ["kicks", "trainers", "jordans", "dunks", "air force 1"]
+  },
+  {
+    "canonical_label": "chunky sneakers",
+    "type": "clothing",
+    "category": "footwear",
+    "aliases": ["dad shoes", "ugly sneakers", "platform sneakers", "bulky sneakers"]
+  },
+  {
+    "canonical_label": "running shoes",
+    "type": "clothing",
+    "category": "footwear",
+    "aliases": ["athletic shoes", "jogging shoes", "gym shoes"]
+  },
+  {
+    "canonical_label": "platform shoes",
+    "type": "clothing",
+    "category": "footwear",
+    "aliases": ["platform sneakers", "thick sole shoes", "elevated shoes"]
+  },
+  {
+    "canonical_label": "loafers",
+    "type": "clothing",
+    "category": "footwear",
+    "aliases": ["penny loafers", "slip-on shoes", "moccasins"]
+  },
+  {
+    "canonical_label": "chelsea boots",
+    "type": "clothing",
+    "category": "footwear",
+    "aliases": ["ankle boots", "elastic boots", "beatle boots"]
+  },
+  {
+    "canonical_label": "combat boots",
+    "type": "clothing",
+    "category": "footwear",
+    "aliases": ["doc martens", "military boots", "lace-up boots"]
+  },
+  {
+    "canonical_label": "slides",
+    "type": "clothing",
+    "category": "footwear",
+    "aliases": ["slip-on sandals", "pool slides", "shower shoes"]
+  },
+  {
+    "canonical_label": "clogs",
+    "type": "clothing",
+    "category": "footwear",
+    "aliases": ["platform clogs", "wooden clogs", "crocs"]
+  },
+  {
+    "canonical_label": "bucket hat",
+    "type": "clothing",
+    "category": "accessories",
+    "aliases": ["fisherman hat", "safari hat", "boonie hat"]
+  },
+  {
+    "canonical_label": "beanie",
+    "type": "clothing",
+    "category": "accessories",
+    "aliases": ["knit hat", "winter hat", "skull cap"]
+  },
+  {
+    "canonical_label": "baseball cap",
+    "type": "clothing",
+    "category": "accessories",
+    "aliases": ["dad hat", "snapback", "trucker hat"]
+  },
+  {
+    "canonical_label": "tote bag",
+    "type": "clothing",
+    "category": "accessories",
+    "aliases": ["canvas bag", "shopper bag", "reusable bag"]
+  },
+  {
+    "canonical_label": "crossbody bag",
+    "type": "clothing",
+    "category": "accessories",
+    "aliases": ["shoulder bag", "messenger bag", "sling bag"]
+  }
+]

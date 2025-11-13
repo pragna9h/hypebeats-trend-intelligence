@@ -1,0 +1,87 @@
+[
+  {
+    "canonical_label": "dress",
+    "type": "clothing",
+    "aliases": [
+      "gown"
+    ],
+    "__index": 10
+  },
+  {
+    "canonical_label": "suit",
+    "type": "clothing",
+    "aliases": [
+      "tuxedo"
+    ],
+    "__index": 11
+  },
+  {
+    "canonical_label": "blazer",
+    "type": "clothing",
+    "aliases": [],
+    "__index": 12
+  },
+  {
+    "canonical_label": "jacket",
+    "type": "clothing",
+    "aliases": [
+      "bomber jacket"
+    ],
+    "__index": 13
+  },
+  {
+    "canonical_label": "leather jacket",
+    "type": "clothing",
+    "aliases": [
+      "leather coat"
+    ],
+    "__index": 14
+  },
+  {
+    "canonical_label": "coat",
+    "type": "clothing",
+    "aliases": [
+      "trench coat",
+      "parka"
+    ],
+    "__index": 15
+  },
+  {
+    "canonical_label": "boots",
+    "type": "clothing",
+    "aliases": [
+      "timbs",
+      "timberlands"
+    ],
+    "__index": 16
+  },
+  {
+    "canonical_label": "sneakers",
+    "type": "clothing",
+    "aliases": [
+      "kicks",
+      "trainers",
+      "jordans",
+      "dunks",
+      "air force 1",
+      "af1",
+      "ones"
+    ],
+    "__index": 17
+  },
+  {
+    "canonical_label": "heels",
+    "type": "clothing",
+    "aliases": [
+      "high heels",
+      "stilettos"
+    ],
+    "__index": 18
+  },
+  {
+    "canonical_label": "loafers",
+    "type": "clothing",
+    "aliases": [],
+    "__index": 19
+  }
+]

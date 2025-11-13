@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: ankane/pgvector:latest
+    container_name: hypebeats-postgres
+    environment:
+      - POSTGRES_DB=hypebeats_rag
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:
