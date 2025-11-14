@@ -131,40 +131,94 @@ class VectorStore:
     def search_with_joins(
         self,
         query_text: str,
-        limit: int = 5,
+        limit: int = 200,
+        start_date: str = None,
+        end_date: str = None,
         return_dataframe: bool = True
     ) -> Union[List[dict], pd.DataFrame]:
-        """Search brand_mentions with JOINs to songs, artists, brands for enriched results."""
+        """Search both brand_mentions and full_lyrics with JOINs and date filtering."""
         query_embedding = self.get_embedding(query_text)
         start_time = time.time()
 
         with self.conn.cursor(row_factory=dict_row) as cur:
-            sql = """
-                SELECT 
-                    bm.id,
-                    bm.contents,
-                    bm.metadata,
-                    s.song_title,
-                    s.release_date,
-                    a.artist_name,
-                    a.genre,
-                    a.region,
-                    b.brand_name,
-                    b.category,
-                    b."origin country" as origin_country,
-                    1 - (bm.embedding <=> %s::vector) as similarity
-                FROM brand_mentions bm
-                LEFT JOIN songs s ON bm.song_id = s.song_id
-                LEFT JOIN artists a ON s.artist_id = a.artist_id
-                LEFT JOIN brands b ON bm.brand_id = b.brand_id
-                ORDER BY bm.embedding <=> %s::vector
+            # Build date filter clause
+            date_filter = ""
+            date_params = []
+            
+            if start_date or end_date:
+                date_conditions = []
+                
+                if start_date:
+                    date_conditions.append("""
+                        (
+                            (s.release_date ~ '^\\d{1,2}/\\d{1,2}/\\d{4}$' AND TO_DATE(s.release_date, 'FMMM/FMDD/YYYY') >= %s::date) OR
+                            (s.release_date ~ '^\\d{4}$' AND s.release_date::int >= EXTRACT(YEAR FROM %s::date)::int)
+                        )
+                    """)
+                    date_params.extend([start_date, start_date])
+                
+                if end_date:
+                    date_conditions.append("""
+                        (
+                            (s.release_date ~ '^\\d{1,2}/\\d{1,2}/\\d{4}$' AND TO_DATE(s.release_date, 'FMMM/FMDD/YYYY') <= %s::date) OR
+                            (s.release_date ~ '^\\d{4}$' AND s.release_date::int <= EXTRACT(YEAR FROM %s::date)::int)
+                        )
+                    """)
+                    date_params.extend([end_date, end_date])
+                
+                date_filter = " AND " + " AND ".join(date_conditions)
+            
+            sql = f"""
+                (
+                    SELECT 
+                        bm.id::text as id,
+                        bm.contents,
+                        'brand_mention' as source,
+                        s.song_title,
+                        s.release_date,
+                        a.artist_name,
+                        a.genre,
+                        a.region,
+                        b.brand_name,
+                        b.category,
+                        1 - (bm.embedding <=> %s::vector) as similarity
+                    FROM brand_mentions bm
+                    LEFT JOIN songs s ON bm.song_id = s.song_id
+                    LEFT JOIN artists a ON s.artist_id = a.artist_id
+                    LEFT JOIN brands b ON bm.brand_id = b.brand_id
+                    WHERE 1=1 {date_filter}
+                )
+                UNION ALL
+                (
+                    SELECT 
+                        fl.song_id::text as id,
+                        SUBSTRING(fl.contents FROM 1 FOR 500) as contents,
+                        'full_lyrics' as source,
+                        s.song_title,
+                        s.release_date,
+                        a.artist_name,
+                        a.genre,
+                        a.region,
+                        NULL as brand_name,
+                        NULL as category,
+                        1 - (fl.embedding <=> %s::vector) as similarity
+                    FROM full_lyrics fl
+                    LEFT JOIN songs s ON fl.song_id = s.song_id
+                    LEFT JOIN artists a ON s.artist_id = a.artist_id
+                    WHERE 1=1 {date_filter}
+                )
+                ORDER BY similarity DESC
                 LIMIT %s
             """
-            cur.execute(sql, (query_embedding, query_embedding, limit))
+            
+            # Build params: embedding for each subquery + date params (2x) + limit
+            params = [query_embedding] + date_params + [query_embedding] + date_params + [limit]
+            
+            cur.execute(sql, params)
             results = cur.fetchall()
 
         elapsed_time = time.time() - start_time
-        logging.info(f"Search with joins completed in {elapsed_time:.3f}s")
+        logging.info(f"Combined search completed in {elapsed_time:.3f}s, found {len(results)} results")
 
         if return_dataframe:
             return pd.DataFrame(results)
