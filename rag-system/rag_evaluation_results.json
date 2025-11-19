@@ -1,0 +1,46 @@
+[
+  {
+    "query": "Which year did Gucci have the most mentions in songs?",
+    "answer": "None",
+    "evaluation": {
+      "correctness": 1,
+      "faithfulness": 10,
+      "relevance": 1,
+      "quality": 2,
+      "comments": "The system answer 'None' does not provide the year with the highest volume of Gucci mentions as requested, resulting in very low correctness and response quality. However, since no evidence chunks were retrieved, the answer is faithful to the provided information. The retrieved chunks are empty, so relevance is minimal."
+    }
+  },
+  {
+    "query": "What was the most mentioned brand in 2022?",
+    "answer": "None",
+    "evaluation": {
+      "correctness": 1,
+      "faithfulness": 10,
+      "relevance": 1,
+      "quality": 2,
+      "comments": "The system answer 'None' is not correct as it does not provide the brand with the highest count in 2022. However, since no evidence chunks were retrieved, the answer is faithful to the provided information. The retrieved chunks are empty, so relevance is minimal. The response is clear but incomplete and lacks reasoning."
+    }
+  },
+  {
+    "query": "What brands does Travis Scott mention most?",
+    "answer": "None",
+    "evaluation": {
+      "correctness": 1,
+      "faithfulness": 10,
+      "relevance": 1,
+      "quality": 2,
+      "comments": "The system answer 'None' is not correct as it does not provide the brands with counts mentioned by Travis Scott, which was expected. However, since no chunks were retrieved, the answer is faithful to the provided evidence. The retrieved chunks are empty, so relevance is minimal. The response quality is low due to lack of completeness and clarity."
+    }
+  },
+  {
+    "query": "How has the popularity of boots changed over time?",
+    "answer": "None",
+    "evaluation": {
+      "correctness": 1,
+      "faithfulness": 1,
+      "relevance": 1,
+      "quality": 1,
+      "comments": "The system answer is 'None' and provides no information about the boots trend over the years. There are no retrieved chunks to support any answer. Therefore, the answer is completely incorrect, unfaithful, irrelevant, and of very poor quality."
+    }
+  }
+]
