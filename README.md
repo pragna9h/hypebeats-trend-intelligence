@@ -390,27 +390,32 @@ FashionInsight(
 hypebeats/
 ├── rag-system/
 │   ├── app/
-│   │   ├── query_rag.py              # 🎯 Main entry point - orchestrates entire pipeline
+│   │   ├── query_rag.py               # 🎯 Main entry point - orchestrates entire pipeline
 │   │   ├── database/
-│   │   │   └── vector_store.py       # Vector search & database operations
+│   │   │   └── vector_store.py        # Vector search & database operations
 │   │   ├── services/
-│   │   │   ├── synthesizer.py        # LLM response generation
-│   │   │   ├── trends_service.py     # Google Trends analysis
+│   │   │   ├── synthesizer.py         # LLM response generation
+│   │   │   ├── trends_service.py      # Google Trends analysis
 │   │   │   ├── popularity_analyzer.py # Viral song detection
-│   │   │   └── sql_aggregation.py    # Count/ranking queries
+│   │   │   └── sql_aggregation.py     # Count/ranking queries
 │   │   ├── models/
-│   │   │   └── trends.py             # Pydantic data models
+│   │   │   └── trends.py              # Pydantic data models
 │   │   └── config/
-│   │       └── settings.py           # Environment configuration
-│   ├── data/                         # CSV/JSONL datasets (500MB)
-│   │   ├── brand_trends_monthly.csv  # Pre-computed trends (11.4K rows)
-│   │   ├── lyrics_final.csv          # 42K song lyrics
-│   │   ├── mentions.csv              # Brand mentions
+│   │       └── settings.py            # Environment configuration
+│   ├── data/                          # CSV/JSONL datasets (500MB)
+│   │   ├── brand_trends_monthly.csv   # Pre-computed trends (11.4K rows)
+│   │   ├── lyrics_final.csv           # 42K song lyrics
+│   │   ├── mentions.csv               # Brand mentions
 │   │   └── ...
 │   └── requirements.txt
-├── README.md                         # ← You are here
-├── ARCHITECTURE.md                   # Deep technical documentation
-└── DATA_FLOW.md                      # Step-by-step query walkthrough
+├── configs/                           # Taxonomy/aliases JSON configs
+├── scripts/                           # Helper data/plot/export scripts (run via python scripts/<name>.py)
+├── plots/                             # Generated plot images
+├── README.md                          # ← You are here
+├── ARCHITECTURE.md                    # Deep technical documentation
+├── DATA_FLOW.md                       # Step-by-step query walkthrough
+├── IMPLEMENTATION_PLAN.md
+└── SETUP.md
 ```
 
 ---
