@@ -1,0 +1,1701 @@
+2025-12-03 17:27:43,976 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:27:43,979 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:27:44,025 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:27:44,094 - INFO - Embedding generated in 1.034s
+2025-12-03 17:27:44,301 - INFO - Embedding generated in 1.205s
+2025-12-03 17:27:44,403 - INFO - Embedding generated in 1.336s
+2025-12-03 17:27:46,296 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:27:46,478 - INFO - Embedding generated in 3.350s
+2025-12-03 17:28:06,038 - INFO - Combined search completed in 21.944s, found 30 results
+2025-12-03 17:28:06,112 - INFO - Search completed in 21.782s
+2025-12-03 17:28:06,142 - INFO - Search completed in 21.732s
+2025-12-03 17:28:06,183 - INFO - Taxonomy search completed in 19.704s, found 5 items
+2025-12-03 17:28:06,715 - INFO -    No songs with popularity_weight found for Versace
+2025-12-03 17:28:06,814 - INFO - 📈 versace trend calculation (pre-computed):
+2025-12-03 17:28:06,814 - INFO -    Total data points: 4
+2025-12-03 17:28:06,814 - INFO -    Pre-mention points: 2 | Avg: 20.00
+2025-12-03 17:28:06,814 - INFO -    Post-mention points: 2 | Avg: 46.00
+2025-12-03 17:28:06,814 - INFO -    Change: +130.0%
+2025-12-03 17:28:06,815 - INFO -    2013: 30 mentions, +130.0% change
+2025-12-03 17:28:06,818 - INFO - Deduplication: 30 -> 1 rows
+2025-12-03 17:28:28,726 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:28:54,931 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:28:55,323 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:28:55,326 - INFO - Embedding generated in 0.320s
+2025-12-03 17:28:55,398 - INFO - Search completed in 0.072s
+2025-12-03 17:28:55,403 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:28:55,406 - INFO - Embedding generated in 0.400s
+2025-12-03 17:28:55,454 - INFO - Search completed in 0.048s
+2025-12-03 17:28:55,523 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:28:55,525 - INFO - Embedding generated in 0.518s
+2025-12-03 17:28:55,549 - INFO - Taxonomy search completed in 0.024s, found 5 items
+2025-12-03 17:28:55,627 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:28:55,628 - INFO - Embedding generated in 0.624s
+2025-12-03 17:28:56,037 - INFO - Combined search completed in 0.408s, found 30 results
+2025-12-03 17:28:56,637 - INFO -    No songs with popularity_weight found (checked 30 rows)
+2025-12-03 17:28:56,637 - INFO -    No songs with popularity_weight found for Tom Ford
+2025-12-03 17:28:56,698 - INFO - 📈 tom ford trend calculation (pre-computed):
+2025-12-03 17:28:56,698 - INFO -    Total data points: 4
+2025-12-03 17:28:56,698 - INFO -    Pre-mention points: 2 | Avg: 46.50
+2025-12-03 17:28:56,698 - INFO -    Post-mention points: 2 | Avg: 55.00
+2025-12-03 17:28:56,698 - INFO -    Change: +18.3%
+2025-12-03 17:28:56,698 - INFO -    2013: 3 mentions, +18.3% change
+2025-12-03 17:28:56,698 - INFO - Deduplication: 30 -> 19 rows
+2025-12-03 17:29:20,975 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:29:44,865 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:29:50,929 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:29:50,948 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:29:50,960 - INFO - Embedding generated in 0.643s
+2025-12-03 17:29:50,972 - INFO - Embedding generated in 0.776s
+2025-12-03 17:29:50,981 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:29:50,983 - INFO - Embedding generated in 0.761s
+2025-12-03 17:29:51,255 - INFO - Taxonomy search completed in 0.294s, found 3 items
+2025-12-03 17:29:51,262 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:29:51,507 - INFO - Embedding generated in 1.294s
+2025-12-03 17:29:58,924 - INFO - Combined search completed in 7.944s, found 30 results
+2025-12-03 17:29:59,013 - INFO - Search completed in 8.030s
+2025-12-03 17:29:59,060 - INFO - Search completed in 7.553s
+2025-12-03 17:29:59,604 - INFO -    No songs with popularity_weight found (checked 12 rows)
+2025-12-03 17:29:59,604 - INFO -    No songs with popularity_weight found for Balenciaga
+2025-12-03 17:29:59,716 - INFO - 📈 balenciaga trend calculation (pre-computed):
+2025-12-03 17:29:59,716 - INFO -    Total data points: 11
+2025-12-03 17:29:59,716 - INFO -    Pre-mention points: 2 | Avg: 36.50
+2025-12-03 17:29:59,716 - INFO -    Post-mention points: 9 | Avg: 39.89
+2025-12-03 17:29:59,716 - INFO -    Change: +9.3%
+2025-12-03 17:29:59,721 - INFO -    2018: 9 mentions, +9.3% change
+2025-12-03 17:29:59,724 - INFO - Deduplication: 30 -> 23 rows
+2025-12-03 17:30:41,760 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+====================================================================================================
+HYPEBEATS RAG SYSTEM - RESEARCH QUESTION TEST SUITE
+====================================================================================================
+
+####################################################################################################
+# RQ1: Lag Analysis & Causal Impact
+####################################################################################################
+
+
+[RQ1 Query 1/7]
+
+================================================================================
+Query: Did Versace spike after Migos 'Versace' single in June 2013?
+================================================================================
+
+📅 Date Range: 2013-06-01 to 2013-06-30
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 0
+  ✓ Full lyrics: 0
+  ✓ Taxonomy: 5
+📈 Fetching trends for Versace...
+🎤 Trying popularity-based analysis for Versace
+   No significant impact from popular songs, trying multi-year analysis...
+📊 Found 1 trend analyses
+  📊 Aggregate analysis: 30 total mentions
+     Pre: 20.0, Post: 46.0, Change: +130.0%
+
+Yes. Versace search interest spiked after Migos’ “Versace” dropped on 6/13/2013, rising +130% from pre- to post-mention and peaking about 2–3 weeks later—consistent with a causal lift from the song.
+
+• Specific mention: Migos – “Versace” (6/13/2013) explicitly names the brand.
+• Pre vs post (Google Trends): 20.0 → 46.0 (+130.0%) within 2013-05-14 to 2013-08-12 window.
+• Peak timing: 51 on 2013-07-01 (~18 days after release), matching the typical 2–4 week lag.
+• Momentum: 30 Versace mentions noted in the period, reinforcing post-release buzz.
+• Category baselines are optional for brand causality and were not required here.
+• Limitations: Google Trends is normalized (0–100) and other concurrent media could contribute, but the clear temporal precedence and lag-aligned peak support attribution.
+
+Quality: sufficient
+
+Artists: Migos
+
+Sample brand mentions:
+artist_name song_title release_date popularity_weight
+      Migos    Versace    6/13/2013              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ1 Query 2/7]
+
+================================================================================
+Query: What was the trend impact of Jay-Z's 'Tom Ford' single in July 2013?
+================================================================================
+
+📅 Date Range: 2013-07-01 to 2013-07-31
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 30
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  Found 2 significant fashion trends
+📈 Fetching trends for Tom Ford...
+🎤 Trying popularity-based analysis for Tom Ford
+   No significant impact from popular songs, trying multi-year analysis...
+📊 Found 1 trend analyses
+  📊 Aggregate analysis: 3 total mentions
+     Pre: 46.5, Post: 55.0, Change: +18.3%
+
+Jay-Z’s ‘Tom Ford’ (7/4/2013) coincided with a measurable lift in Tom Ford search interest: the post-release average rose to 55.0 from a 46.5 pre level (+18.3%). Interest actually peaked at 68 on 7/1/2013 (three days before release), and stayed elevated through late July, so the single likely amplified an ongoing spike rather than solely causing it.
+
+• Brand window: 2013-06-04 to 2013-09-02; Pre: 46.5 vs Post: 55.0 = +18.3%
+• Peak search interest: 68 on 2013-07-01 (3 days pre-release)
+• Jay-Z – ‘Tom Ford’ (7/4/2013) explicit brand mention; 3 total Tom Ford mentions in 2013 window
+• Temporal note: uplift sustained in the 2–4 weeks after release, but peak slightly preceded the single (mixed causality)
+
+Quality: sufficient
+
+Artists: Jay-Z, Tyga, Frank Ocean, Gucci Mane, Rick Ross, Mac Miller
+
+Sample brand mentions:
+artist_name                song_title release_date popularity_weight
+ Mac Miller The Space Spangled Banner     7/5/2013              None
+      Jay-Z                  Tom Ford     7/4/2013              None
+      Jay-Z                       BBC     7/4/2013              None
+      Jay-Z                  Tom Ford     7/4/2013              None
+      Jay-Z        Somewhereinamerica     7/4/2013              None
+      Jay-Z              Picasso Baby     7/4/2013              None
+      Jay-Z                       BBC     7/4/2013              None
+      Jay-Z                       BBC     7/4/2013              None
+Frank Ocean                   Versace    7/25/2013              None
+Frank Ocean                   Versace    7/25/2013              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ1 Query 3/7]
+
+================================================================================
+Query: Did Balenciaga spike after Cardi B mentions in 2018?
+================================================================================
+
+📅 Date Range: 2018-01-01 to 2018-12-31
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 3
+
+👗 Fashion Trends Analysis:
+  Found 3 significant fashion trends
+📈 Fetching trends for Balenciaga...
+🎤 Trying popularity-based analysis for Balenciaga
+   No significant impact from popular songs, trying multi-year analysis...
+📊 Found 1 trend analyses
+  📊 Aggregate analysis: 9 total mentions
+     Pre: 36.5, Post: 39.89, Change: +9.3%
+
+No. Balenciaga’s search interest in 2018 shows only a modest +9.3% lift overall, with a peak in December, and Cardi B’s April 2018 songs did not mention Balenciaga. The 2018 momentum aligns with a multi‑artist cluster (e.g., Ozuna, Lil Uzi Vert, Roddy Ricch, Young Thug, Future, YoungBoy) rather than Cardi B, so a causal spike from her is not supported.
+
+• Cardi B – She Bad (4/4/2018): mentioned Fendi/Prada/Hermès (Birkin); no Balenciaga.
+• Cardi B – I Do (4/6/2018): mentioned Gucci/Givenchy/YSL; no Balenciaga.
+• Cardi B – Drip (4/4/2018): mentioned Gucci; no Balenciaga.
+• Other artists mentioning Balenciaga in 2018: Ozuna – Balenciaga (4/3/2018); Lil Uzi Vert – Rich Forever (4/12/2018); Roddy Ricch – Die Young (7/20/2018); Lil Tecca – Griselda Blanco (7/23/2018); Young Thug – Dirty Shoes (8/17/2018); YoungBoy Never Broke Again – Permanent Scar (9/6/2018) & Blasian (11/3/2018); Future – Realer n Realer (10/19/2018).
+• Multi-year brand view: 2018 window 2018-03-04 → 2019-01-02; Pre: 36.5, Post: 39.89 (+9.3%), Peak: 48 on 2018-12-01.
+• No observable 2–4 week spike after Cardi B’s April releases; the later December peak suggests broader/accumulated drivers.
+
+Quality: sufficient
+
+Artists: Cardi B, Ozuna, Lil Tecca, Young Thug, YoungBoy Never Broke Again, Roddy Ricch, Future, Lil Uzi Vert
+
+Sample brand mentions:
+               artist_name      song_title release_date popularity_weight
+YoungBoy Never Broke Again  Permanent Scar     9/6/2018              None
+                Young Thug     Dirty Shoes    8/17/2018              None
+                Young Thug     Dirty Shoes    8/17/2018              None
+                 Lil Tecca Griselda Blanco    7/23/2018              None
+               Roddy Ricch       Die Young    7/20/2018              None
+                   Cardi B            I Do     4/6/2018              None
+                   Cardi B            I Do     4/6/2018              None
+                   Cardi B       Money Bag     4/6/2018              None
+                   Cardi B       I Like It     4/6/2018              None
+                   Cardi B       Get Up 10     4/6/2018              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ1 Query 4/7]
+
+================================================================================
+Query: Did Gucci spike after Migos Culture album in January 2017?2025-12-03 17:31:01,377 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:31:01,673 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:31:01,676 - INFO - Embedding generated in 0.227s
+2025-12-03 17:31:01,689 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:31:01,690 - INFO - Embedding generated in 0.240s
+2025-12-03 17:31:01,706 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:31:01,707 - INFO - Embedding generated in 0.257s
+2025-12-03 17:31:01,838 - INFO - Combined search completed in 0.162s, found 30 results
+2025-12-03 17:31:01,874 - INFO - Search completed in 0.183s
+2025-12-03 17:31:01,899 - INFO - Taxonomy search completed in 0.191s, found 5 items
+2025-12-03 17:31:02,056 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:31:02,057 - INFO - Embedding generated in 0.607s
+2025-12-03 17:31:02,079 - INFO - Search completed in 0.022s
+2025-12-03 17:31:02,610 - INFO -    No songs with popularity_weight found (checked 12 rows)
+2025-12-03 17:31:02,610 - INFO -    No songs with popularity_weight found for Gucci
+2025-12-03 17:31:02,669 - INFO - 📈 gucci trend calculation (pre-computed):
+2025-12-03 17:31:02,669 - INFO -    Total data points: 4
+2025-12-03 17:31:02,669 - INFO -    Pre-mention points: 2 | Avg: 39.50
+2025-12-03 17:31:02,669 - INFO -    Post-mention points: 2 | Avg: 37.50
+2025-12-03 17:31:02,669 - INFO -    Change: -5.1%
+2025-12-03 17:31:02,669 - INFO -    2017: 5 mentions, -5.1% change
+2025-12-03 17:31:02,670 - INFO - Deduplication: 29 -> 19 rows
+2025-12-03 17:31:41,236 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:31:59,751 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:32:00,162 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:32:00,165 - INFO - Embedding generated in 0.255s
+2025-12-03 17:32:00,178 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:32:00,179 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:32:00,179 - INFO - Embedding generated in 0.266s
+2025-12-03 17:32:00,180 - INFO - Embedding generated in 0.268s
+2025-12-03 17:32:00,221 - INFO - Search completed in 0.055s
+2025-12-03 17:32:00,235 - INFO - Taxonomy search completed in 0.056s, found 2 items
+2025-12-03 17:32:00,298 - INFO - Search completed in 0.118s
+2025-12-03 17:32:00,371 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:32:00,373 - INFO - Embedding generated in 0.467s
+2025-12-03 17:32:02,967 - INFO - Combined search completed in 2.592s, found 30 results
+2025-12-03 17:32:03,664 - INFO -    No songs with popularity_weight found (checked 12 rows)
+2025-12-03 17:32:03,664 - INFO -    No songs with popularity_weight found for Versace
+2025-12-03 17:32:03,712 - INFO - 📈 versace trend calculation (pre-computed):
+2025-12-03 17:32:03,713 - INFO -    Total data points: 4
+2025-12-03 17:32:03,713 - INFO -    Pre-mention points: 2 | Avg: 20.00
+2025-12-03 17:32:03,713 - INFO -    Post-mention points: 2 | Avg: 46.00
+2025-12-03 17:32:03,713 - INFO -    Change: +130.0%
+2025-12-03 17:32:03,713 - INFO -    2013: 30 mentions, +130.0% change
+2025-12-03 17:32:03,714 - INFO - Deduplication: 30 -> 1 rows
+2025-12-03 17:32:55,130 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:34:06,682 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:34:06,962 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:34:06,964 - INFO - Embedding generated in 0.215s
+2025-12-03 17:34:07,003 - INFO - Search completed in 0.039s
+2025-12-03 17:34:07,168 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:34:07,170 - INFO - Embedding generated in 0.420s
+2025-12-03 17:34:07,190 - INFO - Taxonomy search completed in 0.020s, found 2 items
+2025-12-03 17:34:07,261 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:34:07,263 - INFO - Embedding generated in 0.513s
+2025-12-03 17:34:07,317 - INFO - Search completed in 0.054s
+2025-12-03 17:34:07,359 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:34:07,360 - INFO - Embedding generated in 0.612s
+2025-12-03 17:34:07,892 - INFO - Combined search completed in 0.532s, found 30 results
+2025-12-03 17:34:10,820 - INFO -    No songs with popularity_weight found (checked 14 rows)
+2025-12-03 17:34:10,871 - INFO -    No songs with popularity_weight found for Louis Vuitton
+2025-12-03 17:34:11,656 - INFO -    Skipping 2009 (outside pre-computed data range 2010-2025)
+2025-12-03 17:34:19,055 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,055 - INFO -    Total data points: 4
+2025-12-03 17:34:19,055 - INFO -    Pre-mention points: 2 | Avg: 49.00
+2025-12-03 17:34:19,055 - INFO -    Post-mention points: 2 | Avg: 50.00
+2025-12-03 17:34:19,055 - INFO -    Change: +2.0%
+2025-12-03 17:34:19,056 - INFO -    2010: 1 mentions, +2.0% change
+2025-12-03 17:34:19,059 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,059 - INFO -    Total data points: 4
+2025-12-03 17:34:19,059 - INFO -    Pre-mention points: 1 | Avg: 67.00
+2025-12-03 17:34:19,059 - INFO -    Post-mention points: 3 | Avg: 56.00
+2025-12-03 17:34:19,059 - INFO -    Change: -16.4%
+2025-12-03 17:34:19,059 - INFO -    2011: 1 mentions, -16.4% change
+2025-12-03 17:34:19,062 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,062 - INFO -    Total data points: 4
+2025-12-03 17:34:19,062 - INFO -    Pre-mention points: 2 | Avg: 66.50
+2025-12-03 17:34:19,062 - INFO -    Post-mention points: 2 | Avg: 63.50
+2025-12-03 17:34:19,062 - INFO -    Change: -4.5%
+2025-12-03 17:34:19,062 - INFO -    2012: 1 mentions, -4.5% change
+2025-12-03 17:34:19,064 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,064 - INFO -    Total data points: 4
+2025-12-03 17:34:19,064 - INFO -    Pre-mention points: 2 | Avg: 52.00
+2025-12-03 17:34:19,064 - INFO -    Post-mention points: 2 | Avg: 59.00
+2025-12-03 17:34:19,064 - INFO -    Change: +13.5%
+2025-12-03 17:34:19,064 - INFO -    2013: 1 mentions, +13.5% change
+2025-12-03 17:34:19,068 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,068 - INFO -    Total data points: 4
+2025-12-03 17:34:19,068 - INFO -    Pre-mention points: 2 | Avg: 44.00
+2025-12-03 17:34:19,068 - INFO -    Post-mention points: 2 | Avg: 44.50
+2025-12-03 17:34:19,068 - INFO -    Change: +1.1%
+2025-12-03 17:34:19,068 - INFO -    2014: 3 mentions, +1.1% change
+2025-12-03 17:34:19,072 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,072 - INFO -    Total data points: 4
+2025-12-03 17:34:19,072 - INFO -    Pre-mention points: 2 | Avg: 40.50
+2025-12-03 17:34:19,072 - INFO -    Post-mention points: 2 | Avg: 41.00
+2025-12-03 17:34:19,072 - INFO -    Change: +1.2%
+2025-12-03 17:34:19,072 - INFO -    2015: 1 mentions, +1.2% change
+2025-12-03 17:34:19,085 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,085 - INFO -    Total data points: 10
+2025-12-03 17:34:19,085 - INFO -    Pre-mention points: 2 | Avg: 38.00
+2025-12-03 17:34:19,085 - INFO -    Post-mention points: 8 | Avg: 43.88
+2025-12-03 17:34:19,085 - INFO -    Change: +15.5%
+2025-12-03 17:34:19,086 - INFO -    2016: 3 mentions, +15.5% change
+2025-12-03 17:34:19,091 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,091 - INFO -    Total data points: 4
+2025-12-03 17:34:19,091 - INFO -    Pre-mention points: 2 | Avg: 59.00
+2025-12-03 17:34:19,091 - INFO -    Post-mention points: 2 | Avg: 76.50
+2025-12-03 17:34:19,091 - INFO -    Change: +29.7%
+2025-12-03 17:34:19,091 - INFO -    2017: 1 mentions, +29.7% change
+2025-12-03 17:34:19,094 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,094 - INFO -    Total data points: 3
+2025-12-03 17:34:19,094 - INFO -    Pre-mention points: 1 | Avg: 62.00
+2025-12-03 17:34:19,094 - INFO -    Post-mention points: 2 | Avg: 62.50
+2025-12-03 17:34:19,094 - INFO -    Change: +0.8%
+2025-12-03 17:34:19,094 - INFO -    2018: 1 mentions, +0.8% change
+2025-12-03 17:34:19,097 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,097 - INFO -    Total data points: 7
+2025-12-03 17:34:19,097 - INFO -    Pre-mention points: 5 | Avg: 79.20
+2025-12-03 17:34:19,097 - INFO -    Post-mention points: 2 | Avg: 76.50
+2025-12-03 17:34:19,097 - INFO -    Change: -3.4%
+2025-12-03 17:34:19,097 - INFO -    2019: 5 mentions, -3.4% change
+2025-12-03 17:34:19,100 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,100 - INFO -    Total data points: 9
+2025-12-03 17:34:19,100 - INFO -    Pre-mention points: 2 | Avg: 64.00
+2025-12-03 17:34:19,100 - INFO -    Post-mention points: 7 | Avg: 69.43
+2025-12-03 17:34:19,100 - INFO -    Change: +8.5%
+2025-12-03 17:34:19,100 - INFO -    2020: 2 mentions, +8.5% change
+2025-12-03 17:34:19,106 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,106 - INFO -    Total data points: 14
+2025-12-03 17:34:19,106 - INFO -    Pre-mention points: 2 | Avg: 72.50
+2025-12-03 17:34:19,106 - INFO -    Post-mention points: 12 | Avg: 74.42
+2025-12-03 17:34:19,106 - INFO -    Change: +2.6%
+2025-12-03 17:34:19,106 - INFO -    2021: 2 mentions, +2.6% change
+2025-12-03 17:34:19,111 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,111 - INFO -    Total data points: 4
+2025-12-03 17:34:19,111 - INFO -    Pre-mention points: 2 | Avg: 76.00
+2025-12-03 17:34:19,111 - INFO -    Post-mention points: 2 | Avg: 68.00
+2025-12-03 17:34:19,111 - INFO -    Change: -10.5%
+2025-12-03 17:34:19,111 - INFO -    2022: 1 mentions, -10.5% change
+2025-12-03 17:34:19,115 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,115 - INFO -    Total data points: 11
+2025-12-03 17:34:19,115 - INFO -    Pre-mention points: 9 | Avg: 62.78
+2025-12-03 17:34:19,115 - INFO -    Post-mention points: 2 | Avg: 63.00
+2025-12-03 17:34:19,115 - INFO -    Change: +0.4%
+2025-12-03 17:34:19,115 - INFO -    2023: 3 mentions, +0.3% change
+2025-12-03 17:34:19,121 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,121 - INFO -    Total data points: 13
+2025-12-03 17:34:19,121 - INFO -    Pre-mention points: 11 | Avg: 65.18
+2025-12-03 17:34:19,121 - INFO -    Post-mention points: 2 | Avg: 69.00
+2025-12-03 17:34:19,121 - INFO -    Change: +5.9%
+2025-12-03 17:34:19,122 - INFO -    2024: 2 mentions, +5.9% change
+2025-12-03 17:34:19,128 - INFO - 📈 louis vuitton trend calculation (pre-computed):
+2025-12-03 17:34:19,128 - INFO -    Total data points: 4
+2025-12-03 17:34:19,128 - INFO -    Pre-mention points: 2 | Avg: 63.00
+2025-12-03 17:34:19,128 - INFO -    Post-mention points: 2 | Avg: 67.50
+2025-12-03 17:34:19,128 - INFO -    Change: +7.1%
+2025-12-03 17:34:19,129 - INFO -    2025: 1 mentions, +7.1% change
+2025-12-03 17:34:19,130 - INFO - Deduplication: 30 -> 24 rows
+2025-12-03 17:36:03,882 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+================================================================================
+
+📅 Date Range: 2017-01-01 to 2017-01-31
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  Found 3 significant fashion trends
+🔍 Separated 1 fashion items from 29 brand mentions
+📈 Fetching trends for Gucci...
+🎤 Trying popularity-based analysis for Gucci
+   No significant impact from popular songs, trying multi-year analysis...
+📊 Found 1 trend analyses
+  📊 Aggregate analysis: 5 total mentions
+     Pre: 39.5, Post: 37.5, Change: -5.1%
+
+No. Google Trends for Gucci did not spike after Migos’ Culture (1/27/2017); the brand’s average interest edged down, and the most recent peak actually came before the album. Accounting for a 2–4 week lag, there’s no post-release surge above the pre-period baseline.
+
+• Timing: Migos – Culture released 1/27/2017; Migos tracks in January list no explicit Gucci brand mentions.
+• Google Trends (brand: Gucci), 2017 cluster window 2016-12-02 → 2017-03-25: Pre 39.5 vs Post 37.5 = -5.1% change (no spike).
+• Peak 44 on 2016-12-01 occurred prior to the album, indicating momentum preceded the release.
+• Concurrent mentions: Gucci Mane – Sir Brix a Lot (1/23/2017) and Ever (1/24/2017), A$AP Rocky – Wok (2017) referenced Gucci, but did not translate into a post-1/27 spike within the 2–4 week window.
+
+Quality: sufficient
+
+Artists: Migos, Gucci Mane, A$AP Rocky, Tory Lanez, Cardi B, Lil Tecca
+
+Sample brand mentions:
+artist_name      song_title release_date popularity_weight
+ A$AP Rocky             Wok         2017              None
+ A$AP Rocky       Fuck Isis         2017              None
+ A$AP Rocky             Wok         2017              None
+  Lil Tecca        Bag Flow         2017              None
+      Migos    Call Casting     1/3/2017              None
+      Migos         Culture    1/27/2017              None
+      Migos Brown Paper Bag    1/27/2017              None
+ Gucci Mane            Ever    1/24/2017              None
+ Gucci Mane            Ever    1/24/2017              None
+ Gucci Mane  Sir Brix a Lot    1/23/2017              None
+
+Fashion items mentioned (analyzed via taxonomy):
+artist_name song_title      item_name release_date popularity_weight
+      Migos    APESHIT Patek Philippe         2017              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ1 Query 5/7]
+
+================================================================================
+Query: What is the influence trajectory of Versace brand from 2013 to 2023?
+================================================================================
+
+📅 Date Range: 2013-01-01 to 2023-12-31
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 2
+
+👗 Fashion Trends Analysis:
+  No significant fashion trends found
+📈 Fetching trends for Versace...
+🎤 Trying popularity-based analysis for Versace
+   No significant impact from popular songs, trying multi-year analysis...
+📊 Found 1 trend analyses
+  📊 Aggregate analysis: 30 total mentions
+     Pre: 20.0, Post: 46.0, Change: +130.0%
+
+Versace’s hip‑hop-driven influence shows a clear 2013 inflection tied to Migos’ “Versace” (6/13/2013): Google search interest rose from 20 (pre) to 46 (post) for a +130% jump, peaking at 51 around 7/1/2013 after a short lag. The dataset lacks comparable brand trend windows for 2014–2023, so beyond the 2013 surge we cannot map a full year‑by‑year trajectory; current evidence supports a major 2013 spike, with no quantified follow‑through in later years from this data alone.
+
+• Artist mention: Migos – “Versace” (6/13/2013); brand: Versace; genre: Trap/Hip‑Hop.
+• Multi‑year brand analysis provided only for 2013: Window 2013‑05‑14 to 2013‑08‑12; Pre: 20.0 → Post: 46.0 = +130.0%; Peak: 51 on 2013‑07‑01 (≈2–3 week lag after release).
+• Cluster momentum: 30 Versace mentions across the May–Aug 2013 window, consistent with cumulative hype effects.
+• Lyrics corroboration: Heavy 2013 repetition (“versace versace… medusa head…”) and contemporaneous remixes (e.g., Tyga remix noted in July 2013 context).
+• No trend windows or pre/post metrics surfaced for 2014–2023 in the provided data; cannot claim continued impact or additional spikes for those years.
+
+Quality: partial
+
+Artists: Migos
+
+Sample brand mentions:
+artist_name song_title release_date popularity_weight
+      Migos    Versace    6/13/2013              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ1 Query 6/7]
+
+================================================================================
+Query: Generate a marketing insight report for 'Louis Vuitton' based on all mentions.
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 14
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 2
+
+👗 Fashion Trends Analysis:
+  Found 1 significant fashion trends
+📈 Fetching trends for Louis Vuitton...
+🎤 Trying popularity-based analysis for Louis Vuitton
+   No significant impact from popular songs, trying multi-year analysis...
+📊 Found 16 trend analyses
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 59.0, Post: 76.5, Change: +29.7%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 67.0, Post: 56.0, Change: -16.4%
+  📊 Aggregate analysis: 3 total mentions
+     Pre: 38.0, Post: 43.88, Change: +15.5%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 52.0, Post: 59.0, Change: +13.5%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 76.0, Post: 68.0, Change: -10.5%
+  📊 Aggregate analysis: 2 total mentions
+     Pre: 64.0, Post: 69.43, Change: +8.5%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 63.0, Post: 67.5, Change: +7.1%
+  📊 Aggregate analysis: 2 total mentions
+     Pre: 65.18, Post: 69.0, Change: +5.9%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 66.5, Post: 63.5, Change: -4.5%
+  📊 Aggregate analysis: 5 total mentions
+     Pre: 79.2, Post: 76.5, Change: -3.4%
+  📊 Aggregate analysis: 2 total mentions
+     Pre: 72.5, Post: 74.42, Change: +2.6%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 49.0, Post: 50.0, Change: +2.0%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 40.5, Post: 41.0, Change: +1.2%
+  📊 Aggregate analysis: 3 total mentions
+     Pre: 44.0, Post: 44.5, Change: +1.1%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 62.0, Post: 62.5, Change: +0.8%
+  📊 Aggregate analysis: 3 total mentions
+     Pre: 62.78, Post: 63.0, Change: +0.3%
+
+Louis Vuitton’s most credible hip‑hop–driven lifts occurred in 2017 (+29.7% post‑mention) and in clustered activity during 2016 (+15.5%) and late 2013 (+13.5%), all showing 1–8 week lags into December peaks—consistent with causal momentum from those mentions. Recent years show modest or non‑causal movement (2024–2025: +6–7%; 2019 and 2022: declines or peaks preceding mentions), implying seasonality dominates unless reinforced by multiple high‑profile hip‑hop moments.
+
+• 2017 (Gucci Mane – “Enormous,” 10/12/2017): pre 59.0 → post 76.5 (+29.7%); peak 83 on 2017‑12‑01 (~7 weeks after) → strongest causal lift.
+• 2016 cluster (Lil Uzi Vert – “Hi Roller,” 4/15/2016; “Seven Million,” 7/31/2016; 2 Chainz – “Countin,” 10/27/2016): pre 38.0 → post 43.88 (+15.5%); peak 55 on 2016‑12‑01 → additive momentum across Apr–Oct mentions.
+• 2013 (Kanye West – “On Genius and Fashion,” 11/24/2013): pre 52.0 → post 59.0 (+13.5%); peak 65 on 2013‑12‑01 (~1 week) → clear temporal precedence.
+• 2020 (Lil Uzi Vert – “Leaders,” 3/13/2020; “TDA,” 8/29/2020): pre 64.0 → post 69.43 (+8.5%); peak 77 on 2020‑07‑01 → moderate uplift with two touchpoints.2025-12-03 17:36:20,179 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:36:20,518 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:36:20,521 - INFO - Embedding generated in 0.251s
+2025-12-03 17:36:20,544 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:36:20,546 - INFO - Embedding generated in 0.278s
+2025-12-03 17:36:20,579 - INFO - Search completed in 0.059s
+2025-12-03 17:36:20,603 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:36:20,604 - INFO - Embedding generated in 0.334s
+2025-12-03 17:36:20,612 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:36:20,613 - INFO - Embedding generated in 0.344s
+2025-12-03 17:36:21,051 - INFO - Combined search completed in 0.505s, found 30 results
+2025-12-03 17:36:21,070 - INFO - Taxonomy search completed in 0.466s, found 2 items
+2025-12-03 17:36:21,095 - INFO - Search completed in 0.482s
+2025-12-03 17:36:21,635 - INFO - 📈 Versace trend calculation (pre-computed):
+2025-12-03 17:36:21,635 - INFO -    Total data points: 4
+2025-12-03 17:36:21,635 - INFO -    Pre-mention points: 2 | Avg: 38.50
+2025-12-03 17:36:21,635 - INFO -    Post-mention points: 2 | Avg: 35.50
+2025-12-03 17:36:21,635 - INFO -    Change: -7.8%
+2025-12-03 17:36:21,639 - INFO - 📈 Dolce & Gabbana trend calculation (pre-computed):
+2025-12-03 17:36:21,639 - INFO -    Total data points: 4
+2025-12-03 17:36:21,639 - INFO -    Pre-mention points: 2 | Avg: 41.00
+2025-12-03 17:36:21,639 - INFO -    Post-mention points: 2 | Avg: 43.00
+2025-12-03 17:36:21,639 - INFO -    Change: +4.9%
+2025-12-03 17:36:21,640 - INFO - Deduplication: 30 -> 11 rows
+2025-12-03 17:37:23,235 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:37:38,783 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+• 2025 (Lil Durk – “They Want To Be You,” 3/28/2025): pre 63.0 → post 67.5 (+7.1%); peak 68 on 2025‑04‑01 (~1 week) → small, time‑aligned uptick.
+• 2024 (Badshah – “Red And Blue,” 3/18/2024; YoungBoy Never Broke Again – “My Love,” 12/6/2024): pre 65.18 → post 69.0 (+5.9%); peak 88 on 2024‑12‑01 precedes the Dec 6 mention → limited causal attribution.
+• 2021 (J Balvin – “Ma’ G,” 2/28/2021; Roddy Ricch – “25 million,” 12/17/2021): pre 72.5 → post 74.42 (+2.6%); peak 97 on 2021‑12‑01 precedes Dec mention → minor net lift.
+• 2019 (5 mentions incl. DaBaby – “XXL,” 9/27/2019; Harry Styles – “Juice,” 12/18/2019): pre 79.2 → post 76.5 (−3.4%); peak 100 on 2019‑12‑01 suggests seasonality; no positive post‑lift.
+• 2022 (Future – “WORST DAY,” 2/11/2022): pre 76.0 → post 68.0 (−10.5%); peak 78 on 2022‑01‑01 precedes mention → no causal effect.
+• Early era: 2011 (Wiz Khalifa – “Fly You,” 2011) −16.4%; 2012 (Future – “Turn On the Lights,” 4/13/2012) −4.5% → mentions without lift.
+• Category context (optional): accessories/tote bag baseline trended down −54.3% in the period, a non‑brand‑specific headwind.
+
+Quality: sufficient
+
+Artists: Kanye West, YoungBoy Never Broke Again, Future, Harry Styles, Badshah, Lil Uzi Vert, J Balvin, 2 Chainz, Roddy Ricch, Wiz Khalifa, Lil Durk, Tory Lanez, Kendrick Lamar, Gucci Mane, DaBaby
+
+Sample brand mentions:
+ artist_name                    song_title release_date popularity_weight
+      DaBaby                           XXL    9/27/2019              None
+Lil Uzi Vert                           TDA    8/29/2020              None
+      Future                    Translator     8/1/2018              None
+  Kanye West On Achievement and Creativity     7/4/2014              None
+Lil Uzi Vert                 Seven Million    7/31/2016              None
+  Tory Lanez                   Ain't Mine*    5/25/2023              None
+Lil Uzi Vert                     Hi Roller    4/15/2016              None
+ Wiz Khalifa                     Spotlight    4/14/2010              None
+      Future            Turn On the Lights    4/13/2012              None
+    Lil Durk           They Want To Be You    3/28/2025              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ1 Query 7/7]
+
+================================================================================
+Query: Compare Gucci vs Versace trend impact across all mentions.
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 2
+
+👗 Fashion Trends Analysis:
+  Found 3 significant fashion trends
+📊 Comparative query detected
+🎯 Analyzed 2 brands
+  ✓ Versace: -7.8% change
+  ✓ Dolce & Gabbana: +4.9% change
+
+Based on the provided Google Trends snapshots, Versace’s aggregated hip‑hop mention window shows a slight post‑mention decline, while there’s no comparable pre/post series for Gucci—so we cannot quantify Gucci’s impact. Net: Versace did not show a positive uplift in its main 2013 cluster (−7.8%), and Gucci is inconclusive given missing brand‑level trend data.
+
+• Versace (29 mentions): primary cluster Aug 4–Nov 2, 2013 → Pre 38.5 vs Post 35.5 = −7.8% (2–4 week lag implied).
+• Key Versace catalysts in the window: Migos – “Versace” (6/13/2013); multiple Gucci Mane tracks referencing Versace: Fresh As A Bitch (9/3/2013), Me (9/11/2013), OMG Bro (4/20/2014), Drugs Like You (7/4/2014), Turn Up (10/31/2014), I’m Too Much (5/20/2015), Nonchalant (12/16/2016), Last Night (10/18/2019).
+• Gucci (brand): no consolidated pre/post Google Trends metrics provided across mentions; several lyrics referencing “Gucci” exist, but they are item/contextual and not suitable for brand causal attribution.
+
+Quality: partial
+
+Artists: Gucci Mane, Migos
+
+Sample brand mentions:
+artist_name       song_title release_date popularity_weight
+ Gucci Mane Fresh As A Bitch     9/3/2013              None
+ Gucci Mane               Me    9/11/2013              None
+ Gucci Mane   Drugs Like You     7/4/2014              None
+ Gucci Mane        Go For It    7/29/2011              None
+      Migos          Versace    6/13/2013              None
+ Gucci Mane     I'm Too Much    5/20/2015              None
+ Gucci Mane          OMG Bro    4/20/2014              None
+ Gucci Mane       Nonchalant   12/16/2016              None
+ Gucci Mane          Turn Up   10/31/2014              None
+ Gucci Mane       Last Night   10/18/2019              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+# RQ2: System Capability Demonstration
+####################################################################################################
+
+
+[RQ2 Query 1/7]
+
+================================================================================
+Query: Which artists have the most diverse brand vocabulary?
+================================================================================
+
+📊 SQL Aggregation Query - Direct Database Counts
+  Type: artist_brand_diversity
+  Rows: 50
+                    artist  unique_brands                                                                                                                                                                                                                                                                                                                                                                                                      brands_list
+                Gucci Mane             37 [Adidas, Audemars Piguet, Balenciaga, Burberry, Cartier, Chanel, Christian Louboutin, Coach, Dior, Dolce & Gabbana, Fendi, Giorgio Armani, Givenchy, Gucci, Guess, Hermes, Hugo Boss, Jimmy Choo, Louis Vuitton, Maybach, Michael Kors, Moncler, Nike, Omega, Patek Philippe, Prada, Ralph Lauren, Reebok, Richard Mille, Rolex, Swatch, Tiffany & Co., Tom Ford, Valentino, Versace, Yeezy, Yves Saint Laurent]
+                Young Thug             36        [Adidas, Audemars Piguet, Balenciaga, Balmain, Burberry, Cartier, Chanel, Christian Louboutin, Coach, Dior, Fendi, Giorgio Armani, Givenchy, Gucci, Guess, Hermes, Jimmy Choo, Louis Vuitton, Marc Jacobs, Maybach, Michael Kors, Moncler, Nike, Patek Philippe, Prada, Ralph Lauren, Reebok, Richard Mille, Rolex, Supreme, Tiffany & Co., Tom Ford, Tommy Hilfiger, Versace, Yeezy, Yves Saint Laurent]
+                 Lil Wayne             35                                   [Adidas, Audemars Piguet, Bottega Veneta, Cartier, Chanel, Chopard, Coach, Dior, Dolce & Gabbana, Fendi, Fossil, Gucci, Guess, Hermes, Hugo Boss, Jimmy Choo, Louis Vuitton, Marc Jacobs, Maybach, Miu Miu, Nike, Omega, Patek Philippe, Prada, Reebok, Richard Mille, Rolex, Supreme, Tiffany & Co., Tom Ford, Tommy Hilfiger, Valentino, Versace, Yeezy, Yves Saint Laurent]
+                      Tyga             33                                                              [Alexander McQueen, Audemars Piguet, Balmain, Bottega Veneta, Cartier, Chanel, Chopard, Coach, Dior, Fendi, Fossil, Gucci, Guess, Hermes, Hugo Boss, Jimmy Choo, Louis Vuitton, Marc Jacobs, Maybach, Nike, Omega, Patek Philippe, Prada, Puma, Ralph Lauren, Reebok, Rolex, Supreme, Tom Ford, Tommy Hilfiger, Versace, Yeezy, Yves Saint Laurent]
+                    Future             32                                                        [Adidas, Audemars Piguet, Balenciaga, Balmain, Burberry, Cartier, Chanel, Christian Louboutin, Coach, Dior, Fendi, Fenty, Giorgio Armani, Givenchy, Gucci, Guess, Hermes, Jimmy Choo, Louis Vuitton, Maybach, Patek Philippe, Prada, Ralph Lauren, Richard Mille, Rolex, Supreme, Tiffany & Co., Tom Ford, Valentino, Versace, Yeezy, Yves Saint Laurent]
+YoungBoy Never Broke Again             31                                                            [Alexander McQueen, Audemars Piguet, Balenciaga, Balmain, Burberry, Cartier, Chanel, Christian Louboutin, Coach, Dior, Fendi, Givenchy, Gucci, Guess, Hermes, Jimmy Choo, Louis Vuitton, Maybach, Michael Kors, Moncler, Nike, Patek Philippe, Prada, Ralph Lauren, Richard Mille, Rolex, Supreme, Tiffany & Co., Versace, Yeezy, Yves Saint Laurent]
+                  2 Chainz             30                                                                                           [Adidas, Audemars Piguet, Balenciaga, Balmain, Cartier, Chanel, Coach, Dior, Fendi, Giorgio Armani, Givenchy, Gucci, Guess, Hermes, Louis Vuitton, Maybach, Moncler, Nike, Patek Philippe, Prada, Ralph Lauren, Richard Mille, Rolex, Supreme, Tiffany & Co., Tom Ford, Valentino, Versace, Yeezy, Yves Saint Laurent]
+                Tory Lanez             30                                                                                       [Adidas, Audemars Piguet, Balenciaga, Balmain, Bottega Veneta, Cartier, Chanel, Christian Louboutin, Coach, Dior, Fendi, Fenty, Givenchy, Gucci, Guess, Hermes, Jimmy Choo, Louis Vuitton, Maybach, Moncler, Nike, Patek Philippe, Prada, Ralph Lauren, Rolex, Tiffany & Co., Tom Ford, Versace, Yves Saint Laurent, Zara]
+                  Lil Durk             30                                                                                    [Alexander McQueen, Audemars Piguet, Balenciaga, Balmain, Bottega Veneta, Calvin Klein, Cartier, Chanel, Coach, Dior, Fendi, Givenchy, Gucci, Guess, Hermes, Jimmy Choo, Louis Vuitton, Maybach, Moncler, Nike, Patek Philippe, Prada, Puma, Reebok, Richard Mille, Rolex, Tiffany & Co., Versace, Yeezy, Yves Saint Laurent]
+              Lil Uzi Vert             29                                                                                            [Adidas, Alexander McQueen, Audemars Piguet, Balenciaga, Balmain, Burberry, Cartier, Chanel, Coach, Dior, Fendi, Giorgio Armani, Givenchy, Gucci, Guess, Hermes, Hugo Boss, Louis Vuitton, Maybach, Moncler, Nike, Patek Philippe, Prada, Richard Mille, Supreme, Tommy Hilfiger, Versace, Yeezy, Yves Saint Laurent]
+                Lil Yachty             28                                                                                                                            [Adidas, Alexander McQueen, Audemars Piguet, Balmain, Bottega Veneta, Burberry, Cartier, Chanel, Coach, Dior, Fendi, Fenty, Fossil, Gucci, Guess, Hermes, Louis Vuitton, Maybach, Moncler, Nike, Omega, Patek Philippe, Prada, Rolex, Supreme, Tom Ford, Versace, Yves Saint Laurent]
+                 Rick Ross             28                                                                                                [Adidas, Alexander McQueen, Audemars Piguet, Balenciaga, Balmain, Cartier, Chanel, Chopard, Christian Louboutin, Coach, Fendi, Giorgio Armani, Givenchy, Gucci, Guess, Hermes, Louis Vuitton, Maybach, Nike, Patek Philippe, Reebok, Rolex, Supreme, Tiffany & Co., Tom Ford, Versace, Yeezy, Yves Saint Laurent]
+              Moneybagg Yo             26                                                                                                                                                     [Adidas, Audemars Piguet, Balenciaga, Balmain, BVLGARI, Cartier, Chanel, Coach, Dior, Fendi, Gucci, Guess, Hermes, Louis Vuitton, Maybach, Moncler, Nike, Patek Philippe, Prada, Richard Mille, Rolex, Supreme, Tom Ford, Versace, Yves Saint Laurent, Zara]
+               Wiz Khalifa             25                                                                                                                                        [Adidas, Alexander McQueen, Audemars Piguet, Balenciaga, Balmain, Bottega Veneta, Cartier, Chanel, Coach, Dior, Giorgio Armani, Givenchy, Gucci, Guess, Hermes, Louis Vuitton, Maybach, Nike, Prada, Reebok, Richard Mille, Rolex, Tom Ford, Versace, Yves Saint Laurent]
+                     Drake             25                                                                                                                                                            [Adidas, Audemars Piguet, Balmain, Bottega Veneta, Cartier, Chanel, Coach, Dior, Dolce & Gabbana, Fendi, Givenchy, Gucci, Guess, Louis Vuitton, Maybach, Nike, Omega, Patek Philippe, Prada, Rolex, Supreme, Tiffany & Co., Tom Ford, Versace, Yeezy]2025-12-03 17:37:42,059 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:37:42,061 - INFO - Embedding generated in 0.226s
+2025-12-03 17:37:42,073 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:37:42,075 - INFO - Embedding generated in 0.240s
+2025-12-03 17:37:42,076 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:37:42,077 - INFO - Embedding generated in 0.245s
+2025-12-03 17:37:42,118 - INFO - Search completed in 0.057s
+2025-12-03 17:37:42,129 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:37:42,131 - INFO - Search completed in 0.056s
+2025-12-03 17:37:42,143 - INFO - Embedding generated in 0.307s
+2025-12-03 17:37:42,658 - INFO - Combined search completed in 0.581s, found 30 results
+2025-12-03 17:37:42,709 - INFO - Taxonomy search completed in 0.566s, found 5 items
+2025-12-03 17:37:42,908 - INFO - Deduplication: 30 -> 27 rows
+2025-12-03 17:38:29,267 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:38:45,951 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:38:46,604 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:38:46,605 - INFO - Embedding generated in 0.251s
+2025-12-03 17:38:46,635 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:38:46,637 - INFO - Embedding generated in 0.279s
+2025-12-03 17:38:46,680 - INFO - Search completed in 0.075s
+2025-12-03 17:38:46,709 - INFO - Taxonomy search completed in 0.072s, found 3 items
+2025-12-03 17:38:46,733 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:38:46,736 - INFO - Embedding generated in 0.387s
+2025-12-03 17:38:46,754 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:38:46,756 - INFO - Embedding generated in 0.399s
+2025-12-03 17:38:47,625 - INFO - Combined search completed in 0.888s, found 30 results
+2025-12-03 17:38:47,683 - INFO - Search completed in 0.927s
+2025-12-03 17:39:15,135 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 4
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  Found 1 significant fashion trends
+
+Gucci Mane leads in brand vocabulary diversity with 37 unique fashion brands mentioned, followed by Young Thug (36) and Lil Wayne (35). Rounding out the top five are Tyga (33) and Future (32); close behind are YoungBoy Never Broke Again (31) and a three-way tie at 30 for 2 Chainz, Tory Lanez, and Lil Durk.
+
+• Top ranks by unique brands (breadth): Gucci Mane – 37; Young Thug – 36; Lil Wayne – 35; Tyga – 33; Future – 32; YoungBoy Never Broke Again – 31; 2 Chainz – 30; Tory Lanez – 30; Lil Durk – 30; Lil Uzi Vert – 29.
+• Gucci Mane (37) examples: Adidas, Chanel, Dior, Gucci, Louis Vuitton, Rolex, Yeezy.
+• Young Thug (36) examples: Balenciaga, Givenchy, Hermes, Marc Jacobs, Supreme, YSL.
+• Lil Wayne (35) examples: Bottega Veneta, Chanel, Dior, Gucci, Louis Vuitton, Rolex.
+• Tyga (33) examples: Alexander McQueen, Balmain, Cartier, Dior, Versace.
+• Future (32) examples: Balenciaga, Fenty, Givenchy, Louis Vuitton, Prada, Richard Mille.
+• YoungBoy Never Broke Again (31) examples: Alexander McQueen, Burberry, Chanel, Dior, Prada, Versace.
+• 2 Chainz (30) examples: Balenciaga, Givenchy, Gucci, Patek Philippe, Tom Ford, YSL.
+• Tory Lanez (30) examples: Bottega Veneta, Christian Louboutin, Fenty, Moncler, Zara.
+• Lil Durk (30) examples: Bottega Veneta, Calvin Klein, Moncler, Puma, Reebok.
+• Notables for context: Lil Uzi Vert – 29; Lil Yachty – 28; Rick Ross – 28; Moneybagg Yo – 26; Drake – 25; Nicki Minaj – 25.
+
+Quality: sufficient
+
+Artists: City Girls, Offset, Snoop Dogg, Kanye West, Kendrick Lamar, YoungBoy Never Broke Again, Future, A$AP Rocky, Gucci Mane, Lil Wayne, Badshah, Lil Tecca, Moneybagg Yo, Rick Ross, Jay-Z, Travis Scott
+
+Sample brand mentions:
+ artist_name        song_title release_date popularity_weight
+       Jay-Z    Swagga Like Us     9/6/2008              None
+Moneybagg Yo          Big Dawg    9/22/2023              None
+   Lil Tecca      TRANSYNPHONY     9/1/2021              None
+      Offset     Oprah Winfrey     9/1/2014              None
+      Offset Different Species    8/22/2025              None
+      Future        Translator     8/1/2018              None
+       Jay-Z               BBC     7/4/2013              None
+   Lil Wayne           Flex Up     6/6/2025              None
+   Lil Tecca          Designer     6/3/2017              None
+     Badshah           O'Sajna    3/18/2024              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ2 Query 2/7]
+
+================================================================================
+Query: Which songs contain the highest number of brand references?
+================================================================================
+
+📊 SQL Aggregation Query - Direct Database Counts
+  Type: song_brand_density
+  Rows: 50
+                    song                     artist release_date  unique_brands                                                                     brands_list
+                 Blasian YoungBoy Never Broke Again    11/3/2018              8 [Balenciaga, Balmain, Fendi, Gucci, Hermes, Prada, Supreme, Yves Saint Laurent]
+      Chanel (Go Get It)                 Young Thug    8/17/2018              6                 [Chanel, Fendi, Gucci, Hermes, Marc Jacobs, Yves Saint Laurent]
+           Coconut Ciroc                 Gucci Mane    8/15/2014              6                [Audemars Piguet, Burberry, Fendi, Gucci, Hermes, Louis Vuitton]
+          Fashion (2009)                  Lady Gaga    2/17/2009              6                    [Fendi, Giorgio Armani, Gucci, Jimmy Choo, Prada, Valentino]
+          Tequila Kisses                       Tyga   10/23/2017              6                        [Alexander McQueen, Chanel, Dior, Fendi, Gucci, Versace]
+        Fresh As A Bitch                 Gucci Mane     9/3/2013              6                            [Balenciaga, Fendi, Gucci, Prada, Tom Ford, Versace]
+                Designer                  Lil Tecca     6/3/2017              6                                    [Balmain, Fendi, Gucci, Hermes, Prada, Zara]
+                     TDA               Lil Uzi Vert    8/29/2020              5                                   [Cartier, Fendi, Gucci, Louis Vuitton, Prada]
+                     STS                 Young Thug    8/17/2018              5                                 [Cartier, Dior, Gucci, Moncler, Patek Philippe]
+          VUELVE CANDY B                  Bad Bunny   10/13/2023              5                                         [Adidas, Dior, Givenchy, Gucci, Hermes]
+                  Ransom                  Lil Tecca    5/22/2019              5                               [Balenciaga, Chanel, Fendi, Louis Vuitton, Prada]
+                 Peacoat                     Future    1/15/2015              5                                        [Burberry, Chanel, Fendi, Hermes, Prada]
+December 15th Vegas Rant                 Kanye West   12/15/2023              5                              [Adidas, Balenciaga, Chanel, Guess, Louis Vuitton]
+      Comme des GarÃ§ons                  Lil Wayne   11/27/2020              5                              [Chanel, Dior, Fendi, Versace, Yves Saint Laurent]
+                YOSEMITE               Travis Scott     8/3/2018              5                      [Chanel, Gucci, Patek Philippe, Rolex, Yves Saint Laurent]
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 40
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 3
+
+👗 Fashion Trends Analysis:
+  Found 1 significant fashion trends
+
+Blasian by YoungBoy Never Broke Again (11/3/2018) contains the most fashion brand references, with 8 unique brands. The next-highest is a seven-way tie at 6 brands each, led by Young Thug’s Chanel (Go Get It), Gucci Mane’s Coconut Ciroc, and Lil Tecca’s Designer.
+
+• Most brand-packed: Blasian — YoungBoy Never Broke Again (11/3/2018): 8 brands [Balenciaga, Balmain, Fendi, Gucci, Hermes, Prada, Supreme, Yves Saint Laurent]
+• Tied for 2nd (6 each): Chanel (Go Get It) — Young Thug (8/17/2018): [Chanel, Fendi, Gucci, Hermes, Marc Jacobs, Yves Saint Laurent]
+• Tied for 2nd (6 each): Coconut Ciroc — Gucci Mane (8/15/2014): [Audemars Piguet, Burberry, Fendi, Gucci, Hermes, Louis Vuitton]
+• Tied for 2nd (6 each): Fashion (2009) — Lady Gaga (2/17/2009): [Fendi, Giorgio Armani, Gucci, Jimmy Choo, Prada, Valentino]
+• Tied for 2nd (6 each): Tequila Kisses — Tyga (10/23/2017): [Alexander McQueen, Chanel, Dior, Fendi, Gucci, Versace]
+• Tied for 2nd (6 each): Fresh As A Bitch — Gucci Mane (9/3/2013): [Balenciaga, Fendi, Gucci, Prada, Tom Ford, Versace]
+• Tied for 2nd (6 each): Designer — Lil Tecca (6/3/2017): [Balmain, Fendi, Gucci, Hermes, Prada, Zara]
+• Limitation: Rankings reflect the provided brand-density counts; songs outside this dataset or with ambiguous words (e.g., “guess”) aren’t included unless resolved as brands.
+
+Quality: sufficient
+
+Artists: Future, Lil Wayne, Mac Miller, Jay-Z, Pharrell Williams, Lana Del Rey, Snoop Dogg, Beyoncé, Kanye West, Lil Uzi Vert, Tyga, Eminem, Travis Scott, Migos, Gucci Mane, Taylor Swift
+
+Sample brand mentions:
+      artist_name        song_title release_date popularity_weight
+            Jay-Z    Swagga Like Us     9/6/2008              None
+       Mac Miller        Brand Name    9/18/2015              None
+           Future    Same Damn Time    9/11/2011              None
+            Jay-Z      U Don't Know    9/11/2001              None
+           Eminem        The Ringer    8/31/2018              None
+            Jay-Z               BBC     7/4/2013              None
+Pharrell Williams       Have It All    7/30/2012              None
+Pharrell Williams        Number One    7/25/2006              None
+     Travis Scott          KICK OUT    7/13/2025              None
+        Lil Wayne I Know the Future    6/16/2007              None2025-12-03 17:39:30,455 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:39:31,004 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:39:31,007 - INFO - Embedding generated in 0.190s
+2025-12-03 17:39:31,040 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:39:31,042 - INFO - Embedding generated in 0.227s
+2025-12-03 17:39:31,086 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:39:31,087 - INFO - Taxonomy search completed in 0.079s, found 5 items
+2025-12-03 17:39:31,087 - INFO - Embedding generated in 0.275s
+2025-12-03 17:39:31,105 - INFO - Search completed in 0.063s
+2025-12-03 17:39:31,133 - INFO - Search completed in 0.045s
+2025-12-03 17:39:31,373 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:39:31,375 - INFO - Embedding generated in 0.564s
+2025-12-03 17:39:31,472 - INFO - Combined search completed in 0.097s, found 30 results
+2025-12-03 17:39:31,867 - INFO - Deduplication: 26 -> 24 rows
+2025-12-03 17:39:57,150 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:40:23,476 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:40:23,758 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:40:23,760 - INFO - Embedding generated in 0.219s
+2025-12-03 17:40:23,796 - INFO - Taxonomy search completed in 0.035s, found 5 items
+2025-12-03 17:40:23,811 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:40:23,812 - INFO - Embedding generated in 0.273s
+2025-12-03 17:40:23,853 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:40:23,855 - INFO - Embedding generated in 0.314s
+2025-12-03 17:40:24,308 - INFO - Combined search completed in 0.496s, found 30 results
+2025-12-03 17:40:24,330 - INFO - Search completed in 0.474s
+2025-12-03 17:40:24,373 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:40:24,374 - INFO - Embedding generated in 0.833s
+2025-12-03 17:40:24,387 - INFO - Search completed in 0.013s
+2025-12-03 17:40:24,817 - INFO -    No songs with popularity_weight found (checked 12 rows)
+2025-12-03 17:40:24,817 - INFO -    No songs with popularity_weight found for None
+2025-12-03 17:40:24,817 - WARNING - No brand specified for multi-year analysis
+2025-12-03 17:40:24,818 - INFO - 📊 Aggregate analysis for None
+2025-12-03 17:40:24,818 - INFO -    Total mentions: 21
+2025-12-03 17:40:24,818 - INFO -    Date range: 2002-10-29T00:00:00 to 2025-08-22T00:00:00
+2025-12-03 17:40:24,818 - INFO - 📊 Calculated window: 2014-12-02 to 2015-03-02
+2025-12-03 17:40:24,818 - INFO -    Trends window: 2014-12-02 to 2015-03-02
+2025-12-03 17:40:24,818 - INFO -    Split point: 2015-01-01T00:00:00
+2025-12-03 17:40:24,840 - WARNING - Brand 'None' not in pre-computed data, using API
+2025-12-03 17:40:48,359 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:40:48,656 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:40:48,657 - INFO - Embedding generated in 0.223s
+2025-12-03 17:40:48,766 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:40:48,767 - INFO - Embedding generated in 0.333s
+2025-12-03 17:40:48,793 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:40:48,795 - INFO - Embedding generated in 0.359s
+2025-12-03 17:40:48,816 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:40:48,818 - INFO - Embedding generated in 0.382s
+2025-12-03 17:40:49,123 - INFO - Combined search completed in 0.466s, found 30 results
+2025-12-03 17:40:49,141 - INFO - Search completed in 0.374s
+2025-12-03 17:40:49,157 - INFO - Taxonomy search completed in 0.362s, found 5 items
+2025-12-03 17:40:49,172 - INFO - Search completed in 0.354s
+2025-12-03 17:40:49,775 - INFO - 📈 Chanel trend calculation (pre-computed):
+2025-12-03 17:40:49,775 - INFO -    Total data points: 4
+2025-12-03 17:40:49,775 - INFO -    Pre-mention points: 2 | Avg: 65.50
+2025-12-03 17:40:49,775 - INFO -    Post-mention points: 2 | Avg: 68.50
+2025-12-03 17:40:49,775 - INFO -    Change: +4.6%
+2025-12-03 17:40:49,779 - INFO - 📈 Louis Vuitton trend calculation (pre-computed):
+2025-12-03 17:40:49,779 - INFO -    Total data points: 4
+2025-12-03 17:40:49,779 - INFO -    Pre-mention points: 2 | Avg: 52.00
+2025-12-03 17:40:49,779 - INFO -    Post-mention points: 2 | Avg: 59.00
+2025-12-03 17:40:49,779 - INFO -    Change: +13.5%
+2025-12-03 17:40:49,782 - INFO - 📈 Yves Saint Laurent trend calculation (pre-computed):
+2025-12-03 17:40:49,782 - INFO -    Total data points: 4
+2025-12-03 17:40:49,782 - INFO -    Pre-mention points: 2 | Avg: 62.00
+2025-12-03 17:40:49,782 - INFO -    Post-mention points: 2 | Avg: 65.50
+2025-12-03 17:40:49,782 - INFO -    Change: +5.6%
+2025-12-03 17:40:49,785 - INFO - 📈 Prada trend calculation (pre-computed):
+2025-12-03 17:40:49,785 - INFO -    Total data points: 4
+2025-12-03 17:40:49,785 - INFO -    Pre-mention points: 2 | Avg: 73.00
+2025-12-03 17:40:49,785 - INFO -    Post-mention points: 2 | Avg: 86.00
+2025-12-03 17:40:49,785 - INFO -    Change: +17.8%
+2025-12-03 17:40:49,788 - INFO - 📈 Gucci trend calculation (pre-computed):
+2025-12-03 17:40:49,788 - INFO -    Total data points: 4
+2025-12-03 17:40:49,788 - INFO -    Pre-mention points: 2 | Avg: 37.00
+2025-12-03 17:40:49,788 - INFO -    Post-mention points: 2 | Avg: 31.00
+2025-12-03 17:40:49,788 - INFO -    Change: -16.2%
+2025-12-03 17:40:49,789 - INFO - Deduplication: 30 -> 15 rows
+2025-12-03 17:42:22,552 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ2 Query 3/7]
+
+================================================================================
+Query: For artist Future, what are the top brands referenced across his discography?
+================================================================================
+
+📊 SQL Aggregation Query - Direct Database Counts
+  Type: artist_top_brands
+  Rows: 20
+             brand  mention_count  unique_songs
+             Gucci             34            28
+            Chanel             33            25
+           Maybach             24            19
+           Cartier             20            17
+    Patek Philippe             18            13
+Yves Saint Laurent             14             8
+           Versace             12            10
+     Louis Vuitton             11            10
+   Audemars Piguet             11            11
+              Dior             10             9
+             Prada             10             7
+          Burberry             10             7
+             Fendi              9             9
+     Richard Mille              9             9
+            Hermes              8             7
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 0
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  No significant fashion trends found
+🔍 Separated 4 fashion items from 26 brand mentions
+
+Future’s most-referenced brands are Gucci (34 mentions across 28 songs) and Chanel (33 across 25), followed by Maybach, Cartier, and Patek Philippe. He also frequently names YSL, Versace, Louis Vuitton, Audemars Piguet, Dior, Prada, and Burberry throughout his discography.
+
+• Top brand counts (accurate DB aggregation):
+• - Gucci — 34 mentions, 28 unique songs (e.g., “We On Top,” 1/11/2011)
+• - Chanel — 33 mentions, 25 unique songs
+• - Maybach — 24 mentions, 19 unique songs
+• - Cartier — 20 mentions, 17 unique songs
+• - Patek Philippe — 18 mentions, 13 unique songs
+• - Yves Saint Laurent — 14 mentions, 8 unique songs (e.g., “Ain’t No Time,” 2/12/2016)
+• - Versace — 12 mentions, 10 unique songs (e.g., “Freeband Taliban,” 1/15/2013)
+• - Louis Vuitton — 11 mentions, 10 unique songs (e.g., “Astronauts,” 10/19/2018)
+• - Audemars Piguet — 11 mentions, 11 unique songs
+• - Dior — 10 mentions, 9 unique songs
+• - Prada — 10 mentions, 7 unique songs (e.g., “Fettuccine,” 2012)
+• - Burberry — 10 mentions, 7 unique songs
+• - Fendi — 9 mentions, 9 unique songs (e.g., “We On Top,” 1/11/2011)
+• - Richard Mille — 9 mentions, 9 unique songs
+• - Hermès — 8 mentions, 7 unique songs (e.g., “My,” 4/13/2012; “Feed Me Dope,” 10/20/2017)
+• - Balenciaga — 6 mentions, 6 unique songs
+• - Rolex — 6 mentions, 5 unique songs
+• - Jimmy Choo — 6 mentions, 6 unique songs
+• - Guess — 5 mentions, 4 unique songs
+• - Givenchy — 5 mentions, 5 unique songs
+• Notes/limitations: Counts reflect lyric references, not sales or endorsements; aliases normalized where possible.
+
+Quality: sufficient
+
+Artists: Future
+
+Sample brand mentions:
+artist_name             song_title release_date popularity_weight
+     Future                TOLD MY    9/20/2024              None
+     Future           What's Wrong     8/1/2012              None
+     Future          Freeband Gang    6/11/2011              None
+     Future     Hard to Choose One    5/15/2020              None
+     Future                    D4L     5/1/2020              None
+     Future                     My    4/13/2012              None
+     Future Streets Made Me A King    4/12/2024              None
+     Future     Wheneva U Get Thru         2020              None
+     Future             Fettuccine         2012              None
+     Future             Fettuccine         2012              None
+
+Fashion items mentioned (analyzed via taxonomy):
+artist_name   song_title item_name release_date popularity_weight
+     Future      Plastic   Cartier   11/13/2020              None
+     Future All da Smoke   Cartier   10/20/2017              None
+     Future All da Smoke   Cartier   10/20/2017              None
+     Future All da Smoke   Cartier   10/20/2017              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ2 Query 4/7]
+
+================================================================================
+Query: Which brands show the strongest post-mention search increases?
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 8
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  Found 1 significant fashion trends
+🎯 Auto-selected top brand: None
+🎤 Trying popularity-based analysis for None
+   No significant impact from popular songs, trying multi-year analysis...
+🔄 No yearly trends found, using aggregate analysis...
+✗ Error during search: 1 validation error for TrendsRequest
+brand
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+ERROR: 1 validation error for TrendsRequest
+brand
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+
+----------------------------------------------------------------------------------------------------
+
+[RQ2 Query 5/7]
+
+================================================================================
+Query: Rank the top 5 artists by their influence on luxury brand search trends.
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  No significant fashion trends found
+📊 Comparative query detected
+🎯 Analyzed 5 brands
+  ✓ Chanel: +4.6% change
+  ✓ Louis Vuitton: +13.5% change
+  ✓ Yves Saint Laurent: +5.7% change
+  ✓ Prada: +17.8% change
+  ✓ Gucci: -16.2% change
+
+Top 5 (positive) artist impacts on luxury-brand search, using aligned pre/post Google Trends windows: 1) City Girls +17.8% (Prada, Oct 2023), 2) Kanye West +13.5% (Louis Vuitton, Nov 2013), 3) Lil Wayne +10.3% combined (YSL 2025 +5.7% and Chanel 2020 +4.6%), 4) Lil Tecca +5.7% (YSL, Jun 2025), 5) Lil Durk +4.6% (Chanel, May 2020). Future’s 2011 Gucci window showed a −16.2% drop, so he’s excluded from the positive top five.
+
+• City Girls – Flashy (10/20/2023) said “Prada”: brand window 2023-09-20→2023-12-19; Pre 73.0 → Post 86.0 = +17.8% (largest lift).
+• Kanye West – On Genius and Fashion (11/24/2013) said “Louis Vuitton”: window 2013-10-25→2014-01-23; Pre 52.0 → Post 59.0 = +13.5%.
+• Lil Wayne – Flex Up (6/6/2025) said “Yves Saint Laurent” and Comme des Garçons (11/27/2020) said “Chanel”: YSL window 2025-05-07→2025-08-05; Pre 62.0 → Post 65.5 = +5.7%. Chanel window 2020-04-08→2020-07-07; Pre 65.5 → Post 68.5 = +4.6%. Combined impact = +10.3%.
+• Lil Tecca – Malibu’s Most Wanted (6/13/2025) said “Yves Saint Laurent”: shares the same YSL 2025 window above; +5.7%.
+• Lil Durk – Gucci Gucci (5/8/2020) said “Chanel”: shares the Chanel 2020 window above; +4.6%.
+• Excluded/negative: Future – We On Top (1/11/2011) said “Gucci”: window 2010-12-12→2011-03-12; Pre 37.0 → Post 31.0 = −16.2% (no positive causal lift).
+
+Quality: partial
+
+Artists: Lil Wayne, Kanye West, Future, Lil Durk, City Girls, Rick Ross, Travis Scott, Lil Tecca
+
+Sample brand mentions:
+artist_name            song_title release_date popularity_weight
+  Lil Wayne          Chanel No. 5    9/29/2023              None
+  Lil Wayne               Flex Up     6/6/2025              None
+  Lil Tecca  Malibu's Most Wanted    6/13/2025              None
+   Lil Durk           Gucci Gucci     5/8/2020              None
+   Lil Durk           Gucci Gucci     5/8/2020              None
+  Lil Wayne    Comme des GarÃ§ons   11/27/2020              None
+ Kanye West On Genius and Fashion   11/24/2013              None
+  Rick Ross                Iconic   11/10/2023              None
+  Rick Ross                Iconic   11/10/2023              None
+ City Girls                Flashy   10/20/2023              None2025-12-03 17:42:34,370 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:42:34,844 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:42:34,844 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:42:34,845 - INFO - Embedding generated in 0.266s
+2025-12-03 17:42:34,850 - INFO - Embedding generated in 0.271s
+2025-12-03 17:42:34,883 - INFO - Search completed in 0.038s
+2025-12-03 17:42:34,897 - INFO - Taxonomy search completed in 0.047s, found 5 items
+2025-12-03 17:42:34,936 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:42:34,937 - INFO - Embedding generated in 0.358s
+2025-12-03 17:42:34,957 - INFO - Search completed in 0.020s
+2025-12-03 17:42:35,066 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:42:35,067 - INFO - Embedding generated in 0.489s
+2025-12-03 17:42:35,459 - INFO - Combined search completed in 0.391s, found 30 results
+2025-12-03 17:42:36,272 - INFO - 📈 Yves Saint Laurent trend calculation (pre-computed):
+2025-12-03 17:42:36,273 - INFO -    Total data points: 4
+2025-12-03 17:42:36,273 - INFO -    Pre-mention points: 2 | Avg: 38.00
+2025-12-03 17:42:36,273 - INFO -    Post-mention points: 2 | Avg: 54.00
+2025-12-03 17:42:36,273 - INFO -    Change: +42.1%
+2025-12-03 17:42:36,276 - INFO - 📈 Guess trend calculation (pre-computed):
+2025-12-03 17:42:36,276 - INFO -    Total data points: 4
+2025-12-03 17:42:36,276 - INFO -    Pre-mention points: 2 | Avg: 42.50
+2025-12-03 17:42:36,276 - INFO -    Post-mention points: 2 | Avg: 39.50
+2025-12-03 17:42:36,277 - INFO -    Change: -7.1%
+2025-12-03 17:42:36,279 - INFO - 📈 Gucci trend calculation (pre-computed):
+2025-12-03 17:42:36,279 - INFO -    Total data points: 3
+2025-12-03 17:42:36,279 - INFO -    Pre-mention points: 1 | Avg: 23.00
+2025-12-03 17:42:36,279 - INFO -    Post-mention points: 2 | Avg: 23.00
+2025-12-03 17:42:36,279 - INFO -    Change: +0.0%
+2025-12-03 17:42:36,281 - INFO - 📈 Chanel trend calculation (pre-computed):
+2025-12-03 17:42:36,281 - INFO -    Total data points: 3
+2025-12-03 17:42:36,281 - INFO -    Pre-mention points: 2 | Avg: 71.00
+2025-12-03 17:42:36,281 - INFO -    Post-mention points: 1 | Avg: 74.00
+2025-12-03 17:42:36,281 - INFO -    Change: +4.2%
+2025-12-03 17:42:36,285 - INFO - 📈 Versace trend calculation (pre-computed):
+2025-12-03 17:42:36,285 - INFO -    Total data points: 4
+2025-12-03 17:42:36,285 - INFO -    Pre-mention points: 2 | Avg: 41.50
+2025-12-03 17:42:36,285 - INFO -    Post-mention points: 2 | Avg: 42.50
+2025-12-03 17:42:36,285 - INFO -    Change: +2.4%
+2025-12-03 17:42:36,286 - INFO - Deduplication: 30 -> 23 rows
+2025-12-03 17:43:53,690 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:44:27,651 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:44:28,036 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:44:28,041 - INFO - Embedding generated in 0.321s
+2025-12-03 17:44:28,131 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:44:28,132 - INFO - Embedding generated in 0.408s
+2025-12-03 17:44:28,178 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:44:28,183 - INFO - Embedding generated in 0.459s
+2025-12-03 17:44:28,303 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:44:28,305 - INFO - Embedding generated in 0.581s
+2025-12-03 17:44:28,649 - INFO - Combined search completed in 0.607s, found 30 results
+2025-12-03 17:44:28,674 - INFO - Search completed in 0.542s
+2025-12-03 17:44:28,703 - INFO - Taxonomy search completed in 0.520s, found 5 items
+2025-12-03 17:44:28,724 - INFO - Search completed in 0.419s
+2025-12-03 17:44:29,368 - INFO -    Filtered 2 mentions outside pre-computed range (2010-2025)
+2025-12-03 17:44:29,422 - INFO - 📈 Adidas trend calculation (pre-computed):
+2025-12-03 17:44:29,422 - INFO -    Total data points: 4
+2025-12-03 17:44:29,422 - INFO -    Pre-mention points: 2 | Avg: 39.50
+2025-12-03 17:44:29,422 - INFO -    Post-mention points: 2 | Avg: 39.50
+2025-12-03 17:44:29,422 - INFO -    Change: +0.0%
+2025-12-03 17:44:29,431 - INFO - 📈 Nike trend calculation (pre-computed):
+2025-12-03 17:44:29,431 - INFO -    Total data points: 4
+2025-12-03 17:44:29,431 - INFO -    Pre-mention points: 2 | Avg: 50.50
+2025-12-03 17:44:29,431 - INFO -    Post-mention points: 2 | Avg: 50.00
+2025-12-03 17:44:29,431 - INFO -    Change: -1.0%
+2025-12-03 17:44:29,433 - INFO - Deduplication: 28 -> 18 rows
+2025-12-03 17:45:20,818 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:45:33,835 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:45:34,147 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:45:34,148 - INFO - Embedding generated in 0.224s
+2025-12-03 17:45:34,188 - INFO - Taxonomy search completed in 0.039s, found 3 items
+2025-12-03 17:45:34,354 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:45:34,355 - INFO - Embedding generated in 0.431s
+2025-12-03 17:45:34,383 - INFO - Search completed in 0.028s
+2025-12-03 17:45:34,426 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:45:34,427 - INFO - Embedding generated in 0.502s
+2025-12-03 17:45:34,457 - INFO - Search completed in 0.030s
+2025-12-03 17:45:34,568 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:45:34,569 - INFO - Embedding generated in 0.647s
+2025-12-03 17:45:34,647 - INFO - Combined search completed in 0.078s, found 30 results
+2025-12-03 17:45:34,979 - INFO -    No songs with popularity_weight found for Yeezy
+2025-12-03 17:45:34,983 - INFO -    Skipping 2007 (outside pre-computed data range 2010-2025)
+2025-12-03 17:45:35,013 - INFO - 📈 yeezy trend calculation (pre-computed):
+2025-12-03 17:45:35,013 - INFO -    Total data points: 3
+2025-12-03 17:45:35,013 - INFO -    Pre-mention points: 1 | Avg: 55.00
+2025-12-03 17:45:35,013 - INFO -    Post-mention points: 2 | Avg: 82.50
+2025-12-03 17:45:35,013 - INFO -    Change: +50.0%
+2025-12-03 17:45:35,014 - INFO -    2015: 13 mentions, +50.0% change
+2025-12-03 17:45:35,019 - INFO - 📈 yeezy trend calculation (pre-computed):
+2025-12-03 17:45:35,019 - INFO -    Total data points: 13
+2025-12-03 17:45:35,019 - INFO -    Pre-mention points: 2 | Avg: 82.50
+2025-12-03 17:45:35,019 - INFO -    Post-mention points: 11 | Avg: 45.82
+2025-12-03 17:45:35,019 - INFO -    Change: -44.5%
+2025-12-03 17:45:35,020 - INFO -    2016: 8 mentions, -44.5% change
+2025-12-03 17:45:35,024 - INFO - 📈 yeezy trend calculation (pre-computed):
+2025-12-03 17:45:35,024 - INFO -    Total data points: 3
+2025-12-03 17:45:35,024 - INFO -    Pre-mention points: 1 | Avg: 29.00
+2025-12-03 17:45:35,024 - INFO -    Post-mention points: 2 | Avg: 37.50
+2025-12-03 17:45:35,024 - INFO -    Change: +29.3%
+2025-12-03 17:45:35,024 - INFO -    2018: 2 mentions, +29.3% change
+2025-12-03 17:45:35,025 - INFO - Deduplication: 30 -> 9 rows
+2025-12-03 17:46:29,333 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ2 Query 6/7]
+
+================================================================================
+Query: Which artist drove bigger brand search impact: Future or Young Thug?
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 0
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  No significant fashion trends found
+📊 Comparative query detected
+🎯 Analyzed 5 brands
+  ✓ Yves Saint Laurent: +42.1% change
+  ✓ Guess: -7.1% change
+  ✓ Gucci: +0.0% change
+  ✓ Chanel: +4.2% change
+  ✓ Versace: +2.4% change
+
+Young Thug drove the larger measurable brand-search impact. His Yves Saint Laurent (YSL) mentions correspond to a +42.1% post-mention lift vs pre, while no comparable pre/post Google Trends window is available for Future’s 5/1/2020 YSL mention, so his impact cannot be quantified here. Other Thug brand shout-outs were smaller, but the YSL spike dominates the comparison.
+
+• Young Thug → YSL: Loaded (12/25/2013) and multiple YSL mentions; Trends window 2013-11-25→2014-02-23: pre 38.0 → post 54.0 = +42.1% (2–4 week lag within post window).
+• Young Thug → Chanel: Yuck (9/26/2025); Trends window 2025-08-27→2025-11-25: pre 71.0 → post 74.0 = +4.2%.
+• Young Thug → Versace: Tomorrow 'Til Infinity (6/16/2017); Trends window 2017-05-17→2017-08-15: pre 41.5 → post 42.5 = +2.4%.
+• Young Thug → Gucci: Again (7/4/2015), Check (4/1/2015); Trends window 2015-03-02→2015-05-31: pre 23.0 → post 23.0 = +0.0%.
+• Young Thug → Guess: Achieve/We Are (6/8/2011); Trends window 2011-05-09→2011-08-07: pre 42.5 → post 39.5 = -7.1%.
+• Future → YSL: D4L (5/1/2020) mentioned “YSL”; no pre/post Trends values provided, so no causal change can be computed in this dataset.
+• Note: Future’s 2024 jewelry mentions (AP, Patek, RM) are item/category-level, not brand-search windows in this comparison and are excluded from brand impact ranking.
+• Limitation: Only one Future brand instance with no Trends window; results reflect available windows and may omit confounders; category baselines not required for brand claims.
+
+Quality: partial
+
+Artists: Young Thug, Future
+
+Sample brand mentions:
+artist_name           song_title release_date popularity_weight
+ Young Thug Toti Jeep Young Thug     9/6/2017              None
+ Young Thug                 Yuck    9/26/2025              None
+ Young Thug        Whaddup Jesus    9/26/2025              None
+ Young Thug            Draw Down    9/16/2015              None
+ Young Thug           Gain Clout    8/17/2018              None
+ Young Thug                Again     7/4/2015              None
+ Young Thug             Sub Zero    7/11/2014              None
+ Young Thug              Achieve     6/8/2011              None
+ Young Thug               We Are     6/8/2011              None
+ Young Thug         WTF You Doin     6/5/2017              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ2 Query 7/7]
+
+================================================================================
+Query: Compare Nike vs Adidas mentions and trend impact.
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 40
+  ✓ Full lyrics: 8
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  Found 1 significant fashion trends
+📊 Comparative query detected
+🎯 Analyzed 2 brands
+  ✓ Adidas: +0.0% change
+  ✓ Nike: -1.0% change
+
+Adidas edged Nike on hip‑hop-driven search lift in the windows we have: Adidas net 0.0% change after clustered mentions versus Nike −1.0%, and both outperformed the sneakers category’s −38.2% baseline (context only). Given misaligned timeframes (many 2015–2024 mentions lack matched trend windows), treat Adidas’ slight lead (+1.0 pp excess vs Nike) as directional, not definitive.
+
+• Adidas: 18 mentions (2012‑10‑09→2013‑01‑07); Google Trends pre 39.5 vs post 39.5 = +0.0%. Excess vs sneakers baseline (−38.2%) ≈ +38.2 pp.
+• Nike: 10 mentions (2013‑08‑10→2013‑11‑08); pre 50.5 vs post 50.0 = −1.0%. Excess vs sneakers baseline (−38.2%) ≈ +37.2 pp.
+• Specific examples cited: Future – “YSL Cheetah” (11/8/2012) said “adidas”; 2 Chainz – “Where U Been” (9/9/2013) said “nike”.
+• High-profile later mentions without aligned trend data: Kanye West – “FACTS” (12/31/2015) mentions both; Bad Bunny – “YO VISTO ASÍ” (11/27/2020, Adidas); Drake – “Broke Boys” (11/4/2022, Adidas); Nicki Minaj – “Beep Beep” (12/8/2023, Nike); Future – “Young Metro” (3/22/2024, Adidas).
+• Category context: Sneakers baseline moved 65.0 → 40.2 (−38.2%), a headwind both brands beat in their measured windows (context, not causal).
+
+Quality: partial
+
+Artists: Tory Lanez, Future, Kanye West, Drake, Bad Bunny, 2 Chainz, J. Cole, Jay-Z, Lil Wayne, Nicki Minaj, Eminem, DaBaby
+
+Sample brand mentions:
+artist_name                    song_title release_date popularity_weight
+   2 Chainz                  Where U Been     9/9/2013              None
+     Future                       Monster     8/2/2014              None
+ Kanye West On Achievement and Creativity     7/4/2014              None
+      Jay-Z                           BBC     7/4/2013              None
+     DaBaby                    NO DRIBBLE    7/27/2020              None
+    J. Cole                  Let Nas Down    6/18/2013              None
+ Tory Lanez                        Adidas    4/10/2020              None
+     Future                   Young Metro    3/22/2024              None
+Nicki Minaj                     Beep Beep    12/8/2023              None
+ Kanye West                         FACTS   12/31/2015              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+# RQ3: Strengths & Failure Modes
+####################################################################################################
+
+
+[RQ3 Query 1/6]
+
+================================================================================
+Query: Did Yeezy spike after Kanye West mentions?
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 0
+  ✓ Full lyrics: 0
+  ✓ Taxonomy: 3
+📈 Fetching trends for Yeezy...
+🎤 Trying popularity-based analysis for Yeezy
+   No significant impact from popular songs, trying multi-year analysis...
+📊 Found 3 trend analyses
+  📊 Aggregate analysis: 13 total mentions
+     Pre: 55.0, Post: 82.5, Change: +50.0%
+  📊 Aggregate analysis: 8 total mentions
+     Pre: 82.5, Post: 45.82, Change: -44.5%
+  📊 Aggregate analysis: 2 total mentions
+     Pre: 29.0, Post: 37.5, Change: +29.3%
+
+Yes. Yeezy showed a clear spike following Kanye’s late‑2015/early‑2016 mentions, rising +50% from its pre level and peaking at 100 on 2/1/2016 (~4–5 weeks after FACTS). A smaller bump followed Yikes (6/1/2018), with a +29% post‑mention lift and a same‑day peak of 38, though overall 2016 cooled after the February peak.
+
+• Kanye West – FACTS (12/31/2015): Yeezy mentioned → Google Trends pre 55.0 vs post 82.5 = +50.0%; peak 100 on 2016‑02‑01 (~4–5 week lag).
+• Kanye West – On MediaTakeout (2/13/2016) and Siiiiiiiiilver Surffffeeeeer Intermission (2/14/2016): mentions clustered near the Feb peak, reinforcing momentum.
+• 2016 window overall: pre 82.5 vs post 45.82 = −44.5%, indicating cooling after the Feb spike rather than a new uplift from mid‑2016 mentions.
+• Kanye West – Yikes (6/1/2018): pre 29.0 vs post 37.5 = +29.3%; peak 38 on 2018‑06‑01 (immediate bump with modest sustained lift).2025-12-03 17:46:53,706 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:46:54,047 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:46:54,061 - INFO - Embedding generated in 0.260s
+2025-12-03 17:46:54,092 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:46:54,094 - INFO - Embedding generated in 0.290s
+2025-12-03 17:46:54,099 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:46:54,100 - INFO - Embedding generated in 0.295s
+2025-12-03 17:46:54,460 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:46:54,462 - INFO - Embedding generated in 0.660s
+2025-12-03 17:46:55,166 - INFO - Combined search completed in 1.104s, found 30 results
+2025-12-03 17:46:55,208 - INFO - Search completed in 1.115s
+2025-12-03 17:46:55,269 - INFO - Taxonomy search completed in 1.170s, found 3 items
+2025-12-03 17:46:55,282 - INFO - Search completed in 0.819s
+2025-12-03 17:48:01,209 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:48:20,052 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:48:25,170 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:48:25,176 - INFO - Embedding generated in 0.241s
+2025-12-03 17:48:25,188 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:48:25,189 - INFO - Embedding generated in 0.271s
+2025-12-03 17:48:25,212 - INFO - Taxonomy search completed in 0.036s, found 5 items
+2025-12-03 17:48:25,282 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:48:25,283 - INFO - Embedding generated in 0.360s
+2025-12-03 17:48:25,344 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:48:25,345 - INFO - Embedding generated in 0.412s
+2025-12-03 17:48:25,522 - INFO - Combined search completed in 0.334s, found 30 results
+2025-12-03 17:48:25,551 - INFO - Search completed in 0.268s
+2025-12-03 17:48:25,580 - INFO - Search completed in 0.235s
+2025-12-03 17:48:26,211 - INFO -    No songs with popularity_weight found (checked 18 rows)
+2025-12-03 17:48:26,211 - INFO -    No songs with popularity_weight found for Rolex
+2025-12-03 17:48:26,212 - INFO -    No mentions found for Rolex
+2025-12-03 17:48:26,212 - INFO - 📅 User date range → trend window: 2017-12-04 to 2019-01-28, split at 2018-01-01
+2025-12-03 17:48:26,212 - INFO -    Trends window: 2017-12-04 to 2019-01-28
+2025-12-03 17:48:26,212 - INFO -    Split point: 2018-01-01
+2025-12-03 17:48:26,252 - INFO - 📈 Rolex trend calculation (pre-computed):
+2025-12-03 17:48:26,253 - INFO -    Total data points: 14
+2025-12-03 17:48:26,253 - INFO -    Pre-mention points: 1 | Avg: 73.00
+2025-12-03 17:48:26,253 - INFO -    Post-mention points: 13 | Avg: 61.85
+2025-12-03 17:48:26,253 - INFO -    Change: -15.3%
+2025-12-03 17:48:47,330 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:49:01,438 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:49:04,110 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:49:04,112 - INFO - Embedding generated in 0.245s
+2025-12-03 17:49:04,144 - INFO - Search completed in 0.032s
+2025-12-03 17:49:04,309 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:49:04,309 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:49:04,312 - INFO - Embedding generated in 0.445s
+2025-12-03 17:49:04,319 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:49:04,319 - INFO - Embedding generated in 0.450s
+2025-12-03 17:49:04,320 - INFO - Embedding generated in 0.462s
+2025-12-03 17:49:04,344 - INFO - Search completed in 0.032s
+2025-12-03 17:49:04,373 - INFO - Taxonomy search completed in 0.053s, found 2 items
+2025-12-03 17:49:04,961 - INFO - Combined search completed in 0.641s, found 30 results
+2025-12-03 17:49:05,440 - INFO -    No songs with popularity_weight found (checked 12 rows)
+2025-12-03 17:49:05,440 - INFO -    No songs with popularity_weight found for Patek Philippe
+2025-12-03 17:49:05,441 - INFO -    No mentions found for Patek Philippe
+2025-12-03 17:49:05,442 - INFO - 📊 Aggregate analysis for Patek Philippe
+2025-12-03 17:49:33,658 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+• Earlier 2007 mentions exist but fall outside the analyzed trend windows.
+
+Quality: sufficient
+
+Artists: Kanye West
+
+Sample brand mentions:
+artist_name                                                    song_title release_date popularity_weight
+ Kanye West                                               Flashing Lights    9/11/2007              None
+ Kanye West                                                     The Glory    9/11/2007              None
+ Kanye West Kanye West & Taylor Swift's Famous' Lyric Phone Conversation    7/17/2016              None
+ Kanye West Kanye West & Taylor Swift's Famous' Lyric Phone Conversation    7/17/2016              None
+ Kanye West                                                         Yikes     6/1/2018              None
+ Kanye West                     Siiiiiiiiilver Surffffeeeeer Intermission    2/14/2016              None
+ Kanye West                                               On MediaTakeout    2/13/2016              None
+ Kanye West                                                         FACTS   12/31/2015              None
+ Kanye West                                           On Voting for Trump   11/17/2016              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ3 Query 2/6]
+
+================================================================================
+Query: What fashion items does Playboi Carti mention in his lyrics?
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 38
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 3
+
+👗 Fashion Trends Analysis:
+  Found 5 significant fashion trends
+🔍 Separated 30 fashion items from 0 brand mentions
+
+Playboi Carti most often references basics (jeans, tees/shirts), luxury watches (AP, Patek), and a few accessories/footwear (bags, stilettos) across songs from 2020–2025. Notable examples include tees in Vamp Anthem, jeans and a t‑shirt in K POP, multiple watch flexes (AP, Patek) in CRANK and GOOD CREDIT, and stilettos in Sky. Note: entries contain duplicates; items are deduplicated below and may not be exhaustive.
+
+• Sky (2020-12-25): “stilettos” (heels).
+• Vamp Anthem (2020-12-25): “tee” (t‑shirt).
+• HBA (2023-12-19): “watch.”
+• K POP (2024-03-12): “jeans”; “t‑shirt.”
+• CRANK (2025-03-14): “AP” (watch); “bag.”
+• GOOD CREDIT (2025-03-14): “Patek” (watch); “watch.”
+• POP OUT (2025-03-14): “shirt.”
+• Limitations: duplicate extractions removed; some context lines truncated; list may be incomplete.
+
+Quality: sufficient
+
+
+Fashion items mentioned (analyzed via taxonomy):
+  artist_name  song_title item_name release_date  popularity_weight
+Playboi Carti     POP OUT     shirt   2025-03-14          13.094398
+Playboi Carti GOOD CREDIT     watch   2025-03-14          13.644863
+Playboi Carti       CRANK       bag   2025-03-14          12.809022
+Playboi Carti       CRANK       bag   2025-03-14          12.809022
+Playboi Carti       CRANK     watch   2025-03-14          12.809022
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ3 Query 3/6]
+
+================================================================================
+Query: Did Rolex spike after hip-hop mentions in 2018?
+================================================================================
+
+📅 Date Range: 2018-01-01 to 2018-12-31
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 18
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  Found 2 significant fashion trends
+🔍 Separated 27 fashion items from 3 brand mentions
+📈 Fetching trends for Rolex...
+🎤 Trying popularity-based analysis for Rolex
+   No significant impact from popular songs, trying multi-year analysis...
+🔄 No yearly trends found, using aggregate analysis...
+📅 Analyzing trends around 2018-01-01: 2017-12-04 to 2019-01-28
+📊 Found 1 trend analyses
+  📊 Aggregate analysis: 3 total mentions
+     Pre: 73.0, Post: 61.85, Change: -15.3%
+
+No. Across the 2018 window, Rolex search interest did not spike following hip‑hop mentions; instead it trended down from its pre-mention level. Pre-cluster interest averaged 73 vs. post-cluster 61.85 (−15.3%), with an early‑2018 dip and only a partial rebound late in the year that never exceeded the pre level.
+
+• Monthly cluster (3 mentions) spanning 2017-12-04 to 2019-01-28: Pre 73.0 → Post 61.85 = −15.3% change.
+• Trend timeline: 2018-01: 67; 2018-02: 59 (low); 2018-11: 63; 2018-12: 69; 2019-01: 63 — rebound did not surpass pre-cluster 73.
+• 2–4 week lag check: following early‑2018 mentions, interest continued to slide rather than spike.
+• The provided 2018 brand mentions list includes A$AP Rocky citing Dior and Tiffany (not Rolex); explicit “Rollie/Rolex” lyric examples are from 2020, outside the 2018 window.
+
+Quality: sufficient
+
+Artists: A$AP Rocky, Lil Yachty
+
+Sample brand mentions:
+artist_name song_title release_date popularity_weight
+ A$AP Rocky  OG Beeper    5/25/2018              None
+ A$AP Rocky Fukk Sleep    5/25/2018              None
+ Lil Yachty     MICKEY     3/9/2018              None
+
+Fashion items mentioned (analyzed via taxonomy):
+               artist_name    song_title      item_name release_date popularity_weight
+               Roddy Ricch Ricch Forever Patek Philippe     9/7/2018              None
+YoungBoy Never Broke Again      Top Down          Rolex     9/7/2018              None
+              Lil Uzi Vert     New Patek Patek Philippe    9/18/2018              None
+              Lil Uzi Vert     New Patek Patek Philippe    9/18/2018              None
+              Lil Uzi Vert     New Patek Patek Philippe    9/18/2018              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ3 Query 4/6]
+
+================================================================================
+Query: What is the trend impact of Patek Philippe mentions?
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 2
+
+👗 Fashion Trends Analysis:
+  No significant fashion trends found
+🔍 Separated 30 fashion items from 0 brand mentions
+📈 Fetching trends for Patek Philippe...
+🎤 Trying popularity-based analysis for Patek Philippe
+   No significant impact from popular songs, trying multi-year analysis...
+🔄 No yearly trends found, using aggregate analysis...
+✗ Error during search: object of type 'NoneType' has no len()
+ERROR: object of type 'NoneType' has no len()
+
+----------------------------------------------------------------------------------------------------
+
+[RQ3 Query 5/6]
+
+================================================================================
+Query: How many times is Guess brand mentioned vs the word 'guess'?
+================================================================================
+
+📊 SQL Aggregation Query - Direct Database Counts
+  Type: brand_mention_counts
+  Rows: 50
+             brand  total_mentions  unique_songs  unique_artists
+             Gucci            3101          1303              56
+             Guess            1088           796              65
+           Maybach             437           318              38
+            Chanel             293           202              44
+           Versace             252           155              34
+    Patek Philippe             206           160              29
+            Hermes             158           125              35
+Yves Saint Laurent             145           117              27
+             Prada             145           122              38
+           Cartier             140           101              32
+             Fendi             131           103              35
+              Nike             128           100              35
+     Louis Vuitton              98            86              36
+              Dior              98            88              34
+             Coach              96            86              322025-12-03 17:49:34,027 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:49:34,029 - INFO - Embedding generated in 0.172s
+2025-12-03 17:49:34,094 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:49:34,095 - INFO - Embedding generated in 0.236s
+2025-12-03 17:49:34,105 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:49:34,106 - INFO - Embedding generated in 0.248s
+2025-12-03 17:49:34,161 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:49:34,163 - INFO - Embedding generated in 0.305s
+2025-12-03 17:49:34,907 - INFO - Combined search completed in 0.877s, found 30 results
+2025-12-03 17:49:34,928 - INFO - Taxonomy search completed in 0.832s, found 2 items
+2025-12-03 17:49:34,960 - INFO - Search completed in 0.854s
+2025-12-03 17:49:35,062 - INFO - Search completed in 0.899s
+2025-12-03 17:49:35,554 - INFO - Deduplication: 30 -> 20 rows
+2025-12-03 17:50:19,796 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:50:32,642 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-03 17:50:33,073 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:50:33,078 - INFO - Embedding generated in 0.207s
+2025-12-03 17:50:33,096 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:50:33,108 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:50:33,126 - INFO - Embedding generated in 0.260s
+2025-12-03 17:50:33,129 - INFO - Embedding generated in 0.256s
+2025-12-03 17:50:33,143 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-12-03 17:50:33,150 - INFO - Embedding generated in 0.275s
+2025-12-03 17:50:33,155 - INFO - Search completed in 0.077s
+2025-12-03 17:50:34,538 - INFO - Combined search completed in 1.411s, found 30 results
+2025-12-03 17:50:34,646 - INFO - Search completed in 1.517s
+2025-12-03 17:50:34,724 - INFO - Taxonomy search completed in 1.573s, found 5 items
+2025-12-03 17:50:35,587 - INFO -    No songs with popularity_weight found (checked 12 rows)
+2025-12-03 17:50:35,588 - INFO -    No songs with popularity_weight found for Zara
+2025-12-03 17:50:35,644 - INFO - 📈 zara trend calculation (pre-computed):
+2025-12-03 17:50:35,645 - INFO -    Total data points: 4
+2025-12-03 17:50:35,645 - INFO -    Pre-mention points: 2 | Avg: 61.00
+2025-12-03 17:50:35,645 - INFO -    Post-mention points: 2 | Avg: 73.50
+2025-12-03 17:50:35,645 - INFO -    Change: +20.5%
+2025-12-03 17:50:35,645 - INFO -    2016: 1 mentions, +20.5% change
+2025-12-03 17:50:35,652 - INFO - 📈 zara trend calculation (pre-computed):
+2025-12-03 17:50:35,652 - INFO -    Total data points: 4
+2025-12-03 17:50:35,652 - INFO -    Pre-mention points: 2 | Avg: 76.00
+2025-12-03 17:50:35,653 - INFO -    Post-mention points: 2 | Avg: 69.50
+2025-12-03 17:50:35,653 - INFO -    Change: -8.6%
+2025-12-03 17:50:35,653 - INFO -    2017: 1 mentions, -8.6% change
+2025-12-03 17:50:35,663 - INFO - 📈 zara trend calculation (pre-computed):
+2025-12-03 17:50:35,663 - INFO -    Total data points: 7
+2025-12-03 17:50:35,663 - INFO -    Pre-mention points: 5 | Avg: 73.60
+2025-12-03 17:50:35,663 - INFO -    Post-mention points: 2 | Avg: 84.50
+2025-12-03 17:50:35,663 - INFO -    Change: +14.8%
+2025-12-03 17:50:35,663 - INFO -    2018: 2 mentions, +14.8% change
+2025-12-03 17:50:35,679 - INFO - 📈 zara trend calculation (pre-computed):
+2025-12-03 17:50:35,679 - INFO -    Total data points: 4
+2025-12-03 17:50:35,679 - INFO -    Pre-mention points: 2 | Avg: 63.50
+2025-12-03 17:50:35,680 - INFO -    Post-mention points: 2 | Avg: 73.50
+2025-12-03 17:50:35,680 - INFO -    Change: +15.7%
+2025-12-03 17:50:35,681 - INFO -    2022: 1 mentions, +15.8% change
+2025-12-03 17:51:09,749 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 14
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 2
+
+👗 Fashion Trends Analysis:
+  No significant fashion trends found
+
+Across the full database, Guess is logged as a brand 1,088 times. In the sample you provided, all 20 entries are cases where the lyric contains the word “guess” (likely generic usage) rather than an explicit fashion-brand reference; we do not have a global count of generic ‘guess’ tokens across all lyrics in this extract.
+
+• SQL aggregation (accurate): Guess — 1,088 total mentions, 796 unique songs, 65 unique artists.
+• Your sample list contains 20 items labeled “Brand: Guess (artist said ‘guess’)” (e.g., Gucci Mane – Brinks; Lil Wayne – Forever; Jay‑Z – Jigga My Nigga), indicating generic word use rather than the brand.
+• No corpus-wide token count for the generic word ‘guess’ is provided here; only brand-flagged records are counted in the 1,088 figure.
+
+Quality: partial
+
+Artists: Gucci Mane, 2 Chainz, Lil Wayne, Drake, Britney Spears, Jay-Z, SZA, Lady Gaga, Selena Gomez, Blackpink, Billie Eilish, Ariana Grande, Kanye West
+
+Sample brand mentions:
+  artist_name                      song_title release_date popularity_weight
+    Lil Wayne                            Mute    9/27/2018              None
+   Gucci Mane                    Too Turnt Up     7/5/2011              None
+   Gucci Mane                           A Lot    7/22/2009              None
+   Gucci Mane                       Recognize    7/14/2014              None
+    Blackpink                            JUMP    7/11/2025              None
+   Gucci Mane                          Lately    6/18/2021              None
+ Selena Gomez Guess You Could Say I'm In Love     5/2/2025              None
+        Jay-Z                  Jigga My Nigga    4/27/1999              None
+Ariana Grande                 Let Me Love You    4/18/2016              None
+    Lil Wayne                         Forever    4/13/2007              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+[RQ3 Query 6/6]
+
+================================================================================
+Query: Did Zara spike after any hip-hop mentions?
+================================================================================
+
+
+📊 Data Sources Found:
+  ✓ Brand mentions: 30
+  ✓ Enriched lyrics: 12
+  ✓ Full lyrics: 20
+  ✓ Taxonomy: 5
+
+👗 Fashion Trends Analysis:
+  Found 3 significant fashion trends
+📈 Fetching trends for Zara...
+🎤 Trying popularity-based analysis for Zara
+   No significant impact from popular songs, trying multi-year analysis...
+📊 Found 4 trend analyses
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 61.0, Post: 73.5, Change: +20.5%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 63.5, Post: 73.5, Change: +15.8%
+  📊 Aggregate analysis: 2 total mentions
+     Pre: 73.6, Post: 84.5, Change: +14.8%
+  📊 Aggregate analysis: 1 total mentions
+     Pre: 76.0, Post: 69.5, Change: -8.6%
+
+Yes. Zara shows clear post-mention uplifts after several hip‑hop mentions: 2016 (+20.5%), a two-mention cluster in 2018 (+14.8%), and 2022 (+15.8%). One exception is 2017 (Lil Tecca), which declined post‑mention, with the peak preceding the lyric, so no causal spike there.
+
+• Tory Lanez – “To D.R.E.A.M.” (8/19/2016): Google Trends pre 61.0 → post 73.5 = +20.5%; peak 79 on 2016‑10‑01 (~6 weeks after mention).
+• 2018 cluster – Badshah “AISE NA DEKH MUJHE” (8/15/2018) + Moneybagg Yo “Chanel Junkie” (11/2/2018): pre 73.6 → post 84.5 = +14.8%; peak 91 on 2018‑11‑01. Note: peak precedes Moneybagg Yo by 1 day but follows Badshah by ~11 weeks, consistent with momentum.
+• Badshah – “Hosh” (3/19/2022): pre 63.5 → post 73.5 = +15.8%; peak 76 on 2022‑05‑01 (~6 weeks after mention).
+• Lil Tecca – “Designer” (6/3/2017): pre 76.0 → post 69.5 = −8.6%; peak 79 on 2017‑06‑01 (2 days before mention) → no causal uplift.
+
+Quality: sufficient
+
+Artists: Tory Lanez, Moneybagg Yo, Lil Tecca, Badshah, Jay-Z, A$AP Rocky, Gucci Mane, 2 Chainz, Migos, Lady Gaga, Tyga, Nicki Minaj, Lil Yachty, Lil Durk, Young Thug
+
+Sample brand mentions:
+artist_name                                                  song_title release_date popularity_weight
+      Jay-Z                                              Swagga Like Us     9/6/2008              None
+      Jay-Z Jay Z To Launch His Own Range of Leather Backpacks and More    9/26/2013              None
+ Tory Lanez                                               To D.R.E.A.M.    8/19/2016              None
+    Badshah                                          AISE NA DEKH MUJHE    8/15/2018              None
+   2 Chainz                                                 Hurry Quick    8/10/2010              None
+      Jay-Z                                                         BBC     7/4/2013              None
+      Jay-Z                                                         BBC     7/4/2013              None
+ Gucci Mane                                                    Step Out     7/3/2020              None
+  Lil Tecca                                                    Designer     6/3/2017              None
+ Young Thug                                                Wit Da Racks    6/23/2023              None
+
+================================================================================
+
+
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+TEST SUITE COMPLETE
+====================================================================================================
+Total queries run: 20
+
+Review the output above to categorize:
+  - SUFFICIENT quality responses
+  - PARTIAL quality responses
+  - INSUFFICIENT quality responses
+  - Clear spike detections vs null results
