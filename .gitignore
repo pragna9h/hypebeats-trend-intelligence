@@ -35,6 +35,7 @@ ENV/
 *.csv
 *.parquet
 *.feather
+*.safetensors
 *.db
 *.sqlite
 *.sqlite3
