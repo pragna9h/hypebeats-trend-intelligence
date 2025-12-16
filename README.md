@@ -32,6 +32,17 @@ DATA QUALITY: sufficient
 
 ---
 
+## Project Layout
+
+- `rag-system/app` - RAG entrypoints, services, and tests
+- `rag-system/data` - processed CSV/JSONL inputs for vector + trends tables
+- `rag-system/evaluations` - saved metrics: `rag_evaluation_results.json`, `research_results.txt`
+- `configs/` - taxonomy, aliases, and category mappings used for ingestion
+- `scripts/` - data prep, trend export, and plotting utilities
+- `plots/` - generated charts from analysis notebooks/scripts
+
+---
+
 ## System Overview
 
 HYPEBEATS combines vector embeddings, semantic search, and Google Trends data to answer questions like:

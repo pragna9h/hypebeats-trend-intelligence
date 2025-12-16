@@ -1,10 +1,14 @@
 import json
-from typing import List, Dict, Any
 import time
+from pathlib import Path
+from typing import List, Dict, Any
+
 from app.query_rag import query_system
 from openai import OpenAI
 
 client = OpenAI()
+EVAL_DIR = Path(__file__).resolve().parent.parent / "evaluations"
+EVAL_RESULTS_PATH = EVAL_DIR / "rag_evaluation_results.json"
 
 # ------------------------------------------------------------
 # 1. HARD-CODED TEST QUERIES (YOU CAN ADD OR REMOVE)
@@ -88,6 +92,7 @@ Return strictly in JSON:
 # ------------------------------------------------------------
 def run_evaluation():
     results = []
+    EVAL_DIR.mkdir(exist_ok=True)
 
     for item in TEST_QUERIES:
         query = item["query"]
@@ -120,11 +125,11 @@ def run_evaluation():
         time.sleep(1)
 
     # Save results
-    with open("rag_evaluation_results.json", "w") as f:
+    with EVAL_RESULTS_PATH.open("w") as f:
         json.dump(results, f, indent=2)
 
     print("\n🎉 Evaluation complete!")
-    print("Results saved to rag_evaluation_results.json")
+    print(f"Results saved to {EVAL_RESULTS_PATH}")
 
 # ------------------------------------------------------------
 # MAIN

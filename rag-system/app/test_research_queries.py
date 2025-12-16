@@ -2,10 +2,32 @@
 # Run this to test all RQ-relevant queries and save outputs
 
 """
-Usage: python -m app.test_research_queries > research_results.txt 2>&1
+Usage: python -m app.test_research_queries
+This will write a full log to rag-system/evaluations/research_results.txt
 """
 
+import sys
+from pathlib import Path
+
 from app.query_rag import query_system
+
+EVAL_DIR = Path(__file__).resolve().parent.parent / "evaluations"
+RESEARCH_LOG_PATH = EVAL_DIR / "research_results.txt"
+
+
+class DualWriter:
+    """Write stdout to console and file simultaneously."""
+
+    def __init__(self, *targets):
+        self.targets = targets
+
+    def write(self, data):
+        for target in self.targets:
+            target.write(data)
+
+    def flush(self):
+        for target in self.targets:
+            target.flush()
 
 # =============================================================================
 # RQ1: Brand mentions → Google search interest (lag analysis)
@@ -107,4 +129,13 @@ def run_test_suite():
 
 
 if __name__ == "__main__":
-    run_test_suite()
+    EVAL_DIR.mkdir(exist_ok=True)
+    with RESEARCH_LOG_PATH.open("w") as log_file:
+        dual_writer = DualWriter(sys.stdout, log_file)
+        original_stdout = sys.stdout
+        try:
+            sys.stdout = dual_writer
+            run_test_suite()
+            print(f"\nSaved detailed log to {RESEARCH_LOG_PATH}")
+        finally:
+            sys.stdout = original_stdout
