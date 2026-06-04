@@ -1,4 +1,4 @@
-# HYPEBEATS RAG System
+# HypeBeats: AI-Powered Trend Intelligence Platform
 
 > Analyze fashion brand mentions in hip-hop lyrics and measure their impact on consumer trends using AI-powered semantic search.
 
@@ -8,6 +8,29 @@
 [![pgvector](https://img.shields.io/badge/pgvector-0.5+-orange.svg)](https://github.com/pgvector/pgvector)
 
 ---
+
+## Highlights
+
+- Built a trend intelligence platform that measures the relationship between hip-hop culture and consumer brand demand.
+- Combined semantic retrieval, vector search, and Google Trends analysis into a unified RAG pipeline.
+- Indexed 100K+ records across lyrics, fashion mentions, trend signals, and taxonomy data.
+- Achieved 50x vector search acceleration using pgvector IVFFlat indexing.
+- Implemented GPT-powered evidence-backed insight generation with structured outputs.
+
+## Motivation
+
+Fashion trends often emerge in culture before appearing in traditional market signals.
+
+HypeBeats was built to explore whether references to fashion brands in hip-hop lyrics can predict shifts in consumer interest.
+
+By combining semantic search, trend analysis, and retrieval-augmented generation, the platform helps answer questions such as:
+
+- Did brand interest increase after an artist mentioned it?
+- Which artists drive the strongest fashion signals?
+- Which brands experience the largest cultural impact?
+
+The goal is to transform unstructured cultural data into actionable consumer trend intelligence.
+
 
 ## Quick Demo
 
@@ -398,7 +421,7 @@ FashionInsight(
 ## Project Structure
 
 ```
-hypebeats/
+hypebeats-trend-intelligence/
 ├── rag-system/
 │   ├── app/
 │   │   ├── query_rag.py               # 🎯 Main entry point - orchestrates entire pipeline
@@ -447,7 +470,7 @@ psql --version
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/hypebeats.git
+git clone https://github.com/pragna9h/hypebeats-trend-intelligence.git
 cd hypebeats/rag-system
 
 # Install dependencies
@@ -703,14 +726,10 @@ MIT License - see LICENSE file for details
 If you use this system in your research, please cite:
 
 ```bibtex
-@software{hypebeats_rag,
-  title = {HYPEBEATS: RAG System for Fashion Brand Trend Analysis},
-  author = {Your Name},
+@software{hypebeats,
+  title = {HypeBeats: AI-Powered Trend Intelligence Platform},
+  author = {Sai Pragna Boyapati and Agam Sidhu and Aaditya Patil and Kevin Kim and Prinaya Choubey and Joel Mohammed-Paige},
   year = {2025},
-  url = {https://github.com/yourusername/hypebeats}
+  url = {https://github.com/pragna9h/hypebeats-trend-intelligence}
 }
 ```
-
----
-
-**Questions?** Open an issue or contact [your-email@example.com](mailto:your-email@example.com)
