@@ -7,6 +7,10 @@
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--5-412991.svg)](https://openai.com/)
 [![pgvector](https://img.shields.io/badge/pgvector-0.5+-orange.svg)](https://github.com/pgvector/pgvector)
 
+#### Developed as part of USC CSCI-544: Applied NLP
+
+Contributors: Sai Pragna Boyapati, Agam Sidhu, Aaditya Patil, Kevin Kim, Prinaya Choubey, Joel Mohammed-Paige
+
 ---
 
 ## Research Questions
@@ -466,6 +470,8 @@ hypebeats-trend-intelligence/
 ---
 
 ## Quick Start
+
+The system can be run locally using PostgreSQL + pgvector and OpenAI APIs. Detailed setup instructions are available in SETUP.md
 
 ### 1. Prerequisites
 
