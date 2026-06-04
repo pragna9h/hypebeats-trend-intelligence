@@ -680,7 +680,7 @@ CREATE TABLE brand_trends_monthly (
 
 The platform measures how brand interest changes before and after lyrical mentions by aligning Google Trends data with song release dates.
 
-![Influence Metrics](images/influence_metrics.png)
+![Influence Metrics](plots/influence_metrics.png)
 
 ### Gold Label Classification
 
@@ -690,7 +690,7 @@ Using structured influence metrics and sentiment features, a Logistic Regression
 - 5,415 labeled examples
 - Three influence categories (none, moderate, strong)
 
-![Gold Label Classifier](images/gold_label_classifier.png)
+![Gold Label Classifier](plots/gold_label_classifier.png)
 
 ### DistilBERT Influence Prediction
 
@@ -698,7 +698,7 @@ A DistilBERT model was trained to predict influence directly from lyrical text.
 
 Although the dataset was small (122 labeled samples), the experiment demonstrated the feasibility of text-based influence prediction.
 
-![DistilBERT Classifier](images/distilbert_classifier.png)
+![DistilBERT Classifier](plots/distilbert_classifier.png)
 
 ---
 
