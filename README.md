@@ -9,6 +9,16 @@
 
 ---
 
+## Research Questions
+
+HypeBeats was developed to explore the relationship between cultural signals and consumer behavior through three key research questions:
+
+1. How do fashion brand mentions in song lyrics relate to consumer search interest over time?
+2. Can a retrieval-augmented generation (RAG) system answer trend-analysis questions grounded in lyrics and search behavior?
+3. What strengths and limitations emerge when combining semantic retrieval, trend data, and LLM-based reasoning?
+
+The platform combines music lyrics, brand mentions, vector search, Google Trends data, and LLM synthesis to transform unstructured cultural data into actionable trend intelligence.
+
 ## Highlights
 
 - Built a trend intelligence platform that measures the relationship between hip-hop culture and consumer brand demand.
@@ -16,6 +26,7 @@
 - Indexed 100K+ records across lyrics, fashion mentions, trend signals, and taxonomy data.
 - Achieved 50x vector search acceleration using pgvector IVFFlat indexing.
 - Implemented GPT-powered evidence-backed insight generation with structured outputs.
+- Developed an evaluation pipeline for influence prediction using Logistic Regression and DistilBERT.
 
 ## Motivation
 
@@ -663,6 +674,32 @@ CREATE TABLE brand_trends_monthly (
 );
 ```
 
+## Results & Evaluation
+
+### Influence Metrics Analysis
+
+The platform measures how brand interest changes before and after lyrical mentions by aligning Google Trends data with song release dates.
+
+![Influence Metrics](images/influence_metrics.png)
+
+### Gold Label Classification
+
+Using structured influence metrics and sentiment features, a Logistic Regression baseline achieved:
+
+- 94% classification accuracy
+- 5,415 labeled examples
+- Three influence categories (none, moderate, strong)
+
+![Gold Label Classifier](images/gold_label_classifier.png)
+
+### DistilBERT Influence Prediction
+
+A DistilBERT model was trained to predict influence directly from lyrical text.
+
+Although the dataset was small (122 labeled samples), the experiment demonstrated the feasibility of text-based influence prediction.
+
+![DistilBERT Classifier](images/distilbert_classifier.png)
+
 ---
 
 ## Technical Deep Dives
@@ -700,24 +737,6 @@ For more detailed technical documentation:
 - Handles complex causal reasoning
 - Generates evidence-backed explanations
 - Structured outputs ensure reliability
-
----
-
-## Contributing
-
-We welcome contributions! Areas for improvement:
-
-- [ ] Add more brands to pre-computed database
-- [ ] Implement caching layer for embeddings
-- [ ] Add real-time data updates
-- [ ] Improve trend detection algorithms
-- [ ] Add visualization dashboard
-
----
-
-## License
-
-MIT License - see LICENSE file for details
 
 ---
 
