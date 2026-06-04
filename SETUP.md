@@ -20,14 +20,17 @@ Before starting, ensure you have the following installed:
 ## Step 1: Clone & Navigate to Project
 
 ```bash
-# Navigate to project directory
-cd /Users/aaditya/Desktop/HYPEBEATS_GH/Untitled/hypebeats/rag-system
+# Clone repository
+git clone https://github.com/pragna9h/hypebeats-trend-intelligence.git
+
+# Navigate into project
+cd hypebeats-trend-intelligence/rag-system
 ```
 
 **Verify you're in the right place:**
 ```bash
 ls
-# Should see: app/ data/ docker/ requirements.txt .env
+# Expected: app/ data/ docker/ requirements.txt .env
 ```
 
 ---
@@ -142,21 +145,21 @@ Click **Connect** → You should now see the database (currently empty)
 
 ```bash
 # Navigate back to rag-system directory
-cd /Users/aaditya/Desktop/HYPEBEATS_GH/Untitled/hypebeats/rag-system
+cd hypebeats-trend-intelligence/rag-system
 
 # Create virtual environment
-python3 -m venv .venv
+py -m venv .venv
 
-# Activate it
+# Activate Virtual Environment
+
 source .venv/bin/activate  # On macOS/Linux
-# OR
+
 .venv\Scripts\activate     # On Windows
 ```
 
 **Verify activation:**
 ```bash
 which python
-# Should show: /Users/aaditya/.../hypebeats/rag-system/.venv/bin/python
 ```
 
 ### Install Dependencies
@@ -424,7 +427,7 @@ LIMIT 5;
 ### Navigate to App Directory
 
 ```bash
-cd /Users/aaditya/Desktop/HYPEBEATS_GH/Untitled/hypebeats/rag-system/app
+cd app
 ```
 
 ### Test Query 1: Single Brand Trend
@@ -496,6 +499,7 @@ query_system("Which artists have the most diverse brand vocabulary?")
 ```bash
 python
 ```
+Example:
 
 ```python
 from query_rag import query_system
